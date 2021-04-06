@@ -1,0 +1,21 @@
+{
+  "name": "vicso_html",
+  "version": "1.0.0",
+  "description": "This is gulp task-runner for creating/building front-end parts of the vicso projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "VICSO",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify-es": "^2.0.0",
+    "jquery": "^3.6.0"
+  }
+}
