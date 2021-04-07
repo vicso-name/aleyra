@@ -1,1 +1,577 @@
 @import "libs"
+   
+@mixin font-jost
+    font-family: 'Jost', sans-serif
+@mixin font-hari
+    font-family: 'Jomolhari', serif
+
+
+// === common ===    
+body
+    background-color: #111111  
+    color: #ffffff  
+.section-inner    
+    max-width: 1600px
+    padding-left: 15px
+    padding-right: 15px
+    margin: 0 auto
+
+.main-btn
+    position: relative
+    overflow: hidden
+    display: inline-block
+    border: 1px solid #fff
+    color: #fff
+    font-size: 12px
+    font-style: normal
+    font-weight: 500
+    letter-spacing: .1em
+    text-transform: uppercase
+    padding-right: 20px
+    padding-left: 20px
+    padding-top: 9px
+    padding-bottom: 9px
+    text-align: center
+    z-index: 99
+    &::before
+        content: ""
+        background: #ffffff
+        position: absolute
+        transition: all 5s ease
+        transform: scaleX(0)
+        transition: transform 0.3s
+        transform-origin: bottom left
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+        z-index: -1
+    &:hover
+        color: #111111
+        text-decoration: none
+        &::before
+            transform: scaleX(1)    
+
+// === common END ===    
+
+// === header ===
+
+.header-top
+    display: flex
+    height: 46px
+    justify-content: space-between
+    align-items: center
+    &__left
+        &-phone
+            @include font-jost
+
+            font-size: 16px
+            font-weight: 400
+            line-height: 26px
+            letter-spacing: 0em
+            color: #ffffff 
+            margin-right: 25px   
+        &-mail
+            @include font-jost
+
+            font-size: 16px
+            font-weight: 400
+            line-height: 26px
+            letter-spacing: 0em
+            color: #ffffff
+        &-phone,
+        &-mail
+            &:hover
+                color: #ffffff
+            img
+                margin-right: 10.81px
+    &__slogan
+        @include font-jost
+
+        flex-basis: 50%
+        font-size: 10px
+        font-weight: 400
+        line-height: 12px
+        letter-spacing: 0.09em
+        text-transform: uppercase
+    &__right
+        display: flex 
+
+.header-bottom
+    position: absolute
+    left: 0
+    right: 0
+    z-index: 99
+    background-color: rgba(0,0,0, .3)
+    &__content
+        height: 62px
+        display: flex    
+        align-items: center           
+        justify-content: space-between
+        max-width: 1600px
+        padding-left: 15px
+        padding-right: 15px
+        margin: 0 auto
+        &-right
+                display: flex
+                align-items: center
+                &_partners
+                    .bepartner
+                        margin-right: 40px
+                &_login
+                    position: relative
+                    .belogin
+                        @include font-jost
+
+                        color: #ffffff
+                        font-size: 16px
+                        font-style: normal
+                        font-weight: 400
+                        line-height: 26px
+                        letter-spacing: 0em
+                        img
+                            margin-left: 9px
+                    &::before
+                        content: ""
+                        position: absolute
+                        top: -9px
+                        left: -21px
+                        height: 40px
+                        width: 1px
+                        background-color: #454545
+    &__nav
+        &-list
+            display: flex
+            margin: 0
+            padding: 0
+            list-style-type: none
+            li
+                margin-right: 74px
+                &:last-child
+                    margin-right: 0
+                a
+                    @include font-jost
+
+                    color: #ffffff
+                    text-transform: uppercase
+                    font-size: 14px
+                    font-style: normal
+                    font-weight: 400
+                    line-height: 20px
+                    letter-spacing: 0.12em
+    
+
+// === header end ===  
+
+
+// === welcome ===     
+
+.welcome
+    background-position: right
+    background-repeat: no-repeat
+    position: relative
+    &-description
+        flex-basis: 50%
+        &::before
+            content: ""
+            width: 50%
+            left: 0
+            top: 0
+            bottom: 0
+            position: absolute
+            background-image: url(../images/screen_bg.jpg)
+            background-repeat: no-repeat
+            z-index: -1
+        &__slogan
+            @include font-jost
+            position: relative
+            font-size: 14px
+            font-style: normal
+            font-weight: 600
+            line-height: 17px
+            letter-spacing: 0em
+            &::before
+                content: ""
+                position: absolute
+                background-image: url(../images/line.png)
+                height: 15px
+                width: 100%
+                bottom: -22px
+                background-repeat: no-repeat
+        &__title
+            @include font-hari
+
+            font-size: 80px
+            font-style: normal
+            font-weight: 400
+            line-height: 103px
+            letter-spacing: 0em
+            margin-top: 20px
+        &__subtitle    
+            @include font-jost
+            width: 520px
+            font-size: 22px
+            font-style: normal
+            font-weight: 300
+            line-height: 25px
+            letter-spacing: 0em
+    &-video
+        flex-basis: 50%
+        &::before
+            content: ""
+            width: 50%
+            right: 0
+            top: 0
+            bottom: 0
+            position: absolute
+            background-image: url(../images/video_bg.jpg)
+            background-repeat: no-repeat
+            z-index: -1
+        .play-btn
+            position: absolute
+            left: 75%
+            top: 46%
+            cursor: pointer
+            transition: transform .5s ease
+            &:hover
+                transform: scale(1.2)
+
+    .section-inner 
+        display: flex  
+        align-items: center  
+        height: 576px 
+
+
+// === collection ===
+
+.collection
+    margin-top: 74px
+    padding-bottom: 90px
+    &-title
+        @include font-jost
+
+        text-transform: uppercase
+        font-size: 50px
+        font-style: normal
+        font-weight: 200
+        line-height: 58px
+        letter-spacing: 0em
+        margin-bottom: 40px
+    &-content
+        display: flex
+        .collection-content__wrapper + .collection-content__wrapper
+            margin-left: 18px
+        &__item
+            position: relative
+            overflow: hidden
+            display: block
+            &-img
+                img
+                    transform: scale(1.2)
+                    transition: all .5s ease
+                    width: 100%
+            &-meta
+                display: flex
+                align-items: center
+                position: absolute
+                z-index: 99
+                right: 30px
+                top: 30px
+                .new
+                    @include font-jost
+                    color: #ffffff
+                    text-transform: uppercase
+                    font-size: 18px
+                    font-style: normal
+                    font-weight: 300
+                    line-height: 26px
+                    letter-spacing: 0em
+                .image
+                    margin-left: 10px
+                &-img
+                    width: 100%
+            &-overlay
+                opacity: 0
+                position: absolute
+                top: 0
+                bottom: 0
+                left: 0
+                right: 0
+                background: rgba(0,0,0, .6)
+                transition: all .5s ease
+                .look
+                    @include font-jost
+                    color: #ffffff
+                    font-size: 16px
+                    font-style: normal
+                    font-weight: 400
+                    line-height: 23px
+                    letter-spacing: 0em
+                    text-align: left
+                    position: absolute
+                    left: 32px
+                    bottom: 36px
+            &:hover
+                .collection-content__item-img
+                    img
+                        transform: scale(1)
+                .collection-content__item-overlay
+                    opacity: 1
+            
+            &-title
+                margin-top: 22px
+                .link
+                    @include font-jost
+                    text-transform: uppercase
+                    color: #ffffff
+                    font-size: 15px
+                    font-style: normal
+                    font-weight: 400
+                    line-height: 19px
+                    letter-spacing: 0em
+.all-collections
+    text-align: center
+    margin-top: 50px
+      
+
+// === collection end ===     
+
+
+// === about ===         
+.about   
+    background-repeat: no-repeat   
+    height: 487px
+    .section-inner
+        height: 100%
+        display: flex
+        align-items: center
+    &-content__fake
+        flex-basis: 12%
+    &-content
+        height: 100%
+        flex-basis: 50%
+        display: flex
+        align-items: center
+        margin: 0 auto
+        .description
+            @include font-jost
+
+            font-size: 18px
+            font-style: normal
+            font-weight: 300
+            line-height: 26px
+            letter-spacing: 0em
+            margin-top: 48px
+
+// === about end ===  
+
+.gallery 
+     
+    &-grid
+        position: relative
+        width: 83vw
+        height: 60vw
+        margin: 0 auto
+        &__item
+            &-content
+                @include font-jost
+                text-transform: uppercase
+                position: absolute
+                width: 100%
+                text-align: center
+                top: 0
+                bottom: 0
+                font-size: 15px
+                font-style: normal
+                font-weight: 400
+                line-height: 19px
+                letter-spacing: 0em
+                opacity: 0
+                transition: all .5s ease
+                &::before
+                    content: ""
+                    position: absolute
+                    top: 0
+                    bottom: 0
+                    left: 0
+                    right: 0
+                    background-color: rgba(0,0,0, .6)
+                &_title
+                    position: absolute
+                    left: 50%
+                    top: 50%
+                    width: 100%
+                    transform: translate(-50%, -50%)
+            &:hover
+                .gallery-grid__item-content
+                    opacity: 1
+            &:nth-child(1)
+                .s-content-block
+                    top: 4vw
+                    left: 0
+                    width: 20vw
+                    height: 26vw 
+            &:nth-child(2)
+                .s-content-block
+                    top: 4vw
+                    left: 21vw
+                    width: 20vw
+                    height: 28vw
+            &:nth-child(3)
+                .s-content-block
+                    top: 4vw
+                    left: 42vw
+                    width: 20vw
+                    height: 24vw
+            &:nth-child(4)
+                .s-content-block
+                    top: 4vw
+                    left: 63vw
+                    width: 20vw
+                    height: 22vw
+            &:nth-child(5)
+                .s-content-block
+                    bottom: 3vw
+                    left: 0
+                    width: 20vw
+                    height: 26vw
+            &:nth-child(6)
+                .s-content-block
+                    bottom: 3vw
+                    left: 21vw
+                    width: 20vw
+                    height: 24vw
+            &:nth-child(7)
+                .s-content-block
+                    bottom: 3vw
+                    left: 42vw
+                    width: 20vw
+                    height: 28vw
+            &:nth-child(8)
+                .s-content-block
+                    bottom: 3vw
+                    left: 63vw
+                    width: 20vw
+                    height: 30vw
+.s-content-block
+    display: block
+    position: absolute
+    background-repeat: no-repeat
+    background-position: 0 0
+    background-size: cover
+    cursor: pointer             
+                
+// === upload  === 
+
+.upload
+    margin-top: 70px
+    &-content
+        background-color: #1A1A1A
+        padding-top: 35px
+        padding-bottom: 35px
+        display: flex
+        justify-content: space-around
+        align-items: center
+        &__description
+            @include font-jost
+
+            font-size: 18px
+            font-style: normal
+            font-weight: 300
+            line-height: 26px
+            letter-spacing: 0em
+            text-align: left
+            flex-basis: 71%
+
+// === upload end ===  
+
+// === footer end ===  
+
+.footer
+    margin-top: 144px
+    &-menu
+        padding: 0
+        margin: 0
+        list-style-type: none
+        display: flex
+        justify-content: center
+        li
+            margin-right: 74px
+            &:last-child
+                margin-right: 0
+            a
+                @include font-jost
+
+                color: #ffffff
+                font-size: 14px
+                font-style: normal
+                font-weight: 400
+                line-height: 20px
+                letter-spacing: 0.12em
+                text-transform: uppercase
+    &-meta
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-top: 43px
+        &__contact
+            .phone
+                font-family: Jost,sans-serif
+                font-size: 16px
+                font-weight: 400
+                line-height: 26px
+                letter-spacing: 0
+                color: #fff
+                margin-right: 22px
+                img
+                  margin-right: 10.81px  
+            .mail
+                font-family: Jost,sans-serif
+                font-size: 16px
+                font-weight: 400
+                line-height: 26px
+                letter-spacing: 0
+                color: #fff
+                img
+                  margin-right: 10.81px
+    &-copiright 
+        padding-top: 14px
+        padding-bottom: 27px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        &__adress
+            ul
+                list-style-type: none
+                padding: 0
+                margin: 0
+                font-family: Jost,sans-serif
+                font-size: 9px
+                font-style: normal
+                font-weight: 300
+                letter-spacing: 0em
+        &__content
+            font-family: Jost,sans-serif
+            color: #545454
+            font-size: 14px
+            font-style: normal
+            font-weight: 400
+            line-height: 20px
+            letter-spacing: 0em
+        &__privacy
+            .privacy,
+            .convention
+                font-family: Jost,sans-serif
+                color: #ffffff
+                font-size: 14px
+                font-style: normal
+                font-weight: 400
+                line-height: 20px
+                letter-spacing: 0em
+            .convention
+                margin-left: 30px
+   
+
+
+    
+// === footer ===  
