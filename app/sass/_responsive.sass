@@ -343,6 +343,12 @@
         grid-template-areas: "content_two content-three" "sidebar sidebar" "content_one content_one"
         grid-gap: unset
         height: 701px
+    .grid__container.project-page
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 318px 200px 200px
+        grid-template-areas: "sidebar sidebar" "content_one content_one" "content_two content-three" 
+        grid-gap: unset
+        height: 701px
     .grid__container .item-content__title
         height: auto
         padding-top: 5px
@@ -381,7 +387,9 @@
         justify-content: space-between
     .collection-content__item-title
         width: auto
-
+    .collection-inner__title
+       .main-btn
+           display: none
     
 
 /* For 480 Resolution */
