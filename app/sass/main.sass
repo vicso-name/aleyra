@@ -34,6 +34,13 @@ body
 
 .mobile-menu__content
     display: none
+    .mobile-menu-flex
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        height: 90%
+
+
 
 .breadcrumbs
     padding-top: 121px
@@ -297,21 +304,18 @@ body
 // === welcome ===     
 
 .welcome
-    background-position: right
-    background-repeat: no-repeat
     position: relative
-    &-description
-        flex-basis: 50%
-        &::before
-            content: ""
-            width: 50%
-            left: 0
-            top: 0
-            bottom: 0
-            position: absolute
-            background-image: url(../images/screen_bg.jpg)
-            background-repeat: no-repeat
-            z-index: -1
+    display: flex
+    height: 577px
+    &-text
+        flex-basis: 40%
+        background-image: url(../images/screen_bg.jpg)
+        background-repeat: no-repeat
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        height: 100%
         &__slogan
             @include font-jost
             position: relative
@@ -339,32 +343,31 @@ body
             margin-top: 20px
         &__subtitle    
             @include font-jost
-            width: 520px
+            max-width: 350px
             font-size: 22px
             font-style: normal
             font-weight: 300
             line-height: 25px
             letter-spacing: 0em
     &-video
-        flex-basis: 50%
-        &::before
-            content: ""
-            width: 50%
-            right: 0
-            top: 0
-            bottom: 0
-            position: absolute
-            background-image: url(../images/video_bg.jpg)
-            background-repeat: no-repeat
-            z-index: -1
+        position: relative
+        flex-basis: 60%
+        background-image: url(../images/video_bg.jpg)
+        background-repeat: no-repeat
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center
         .play-btn
             position: absolute
-            left: 75%
-            top: 46%
+            left: 50%
+            transform: translate(-50%, -50%)
+            top: 50%
             cursor: pointer
-            transition: transform .5s ease
+            img
+                transition: transform .5s ease
             &:hover
-                transform: scale(1.2)
+                img
+                    transform: scale(1.2)
 
     .section-inner 
         display: flex  
@@ -476,30 +479,31 @@ body
 
 
 // === about ===         
-.about   
-    background-repeat: no-repeat   
-    height: 487px
+.about
+    position: relative
     background-image: url(../images/about_bg.png)
-    background-position: bottom
-    .section-inner
-        height: 100%
-        display: flex
-        align-items: center
+    background-repeat: no-repeat
+    background-position: 0 0
+    background-size: cover
+    padding-bottom: 133px
+    padding-top: 59px
+    img
+        margin-bottom: 48px
     &-content
-        height: 100%
-        flex-basis: 50%
+        width: 850px  
+    .section-inner
         display: flex
-        align-items: center
-        margin: 0 auto
-        .description
-            @include font-jost
-
-            font-size: 18px
-            font-style: normal
-            font-weight: 300
-            line-height: 26px
-            letter-spacing: 0em
-            margin-top: 48px
+        justify-content: flex-end
+    &::before
+        content: ""
+        position: absolute
+        background-image: url(../images/about_line.svg)
+        background-repeat: no-repeat
+        top: -7%
+        left: 0
+        right: 0
+        bottom: 0
+        z-index: 99999
 
 // === about end ===  
 

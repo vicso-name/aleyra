@@ -26,13 +26,18 @@
             <div class="header-top__left">
                 <a class="header-top__left-phone" href="tel:+79163819783"><img src="images/phone.svg" alt="phone">+7 916 381-97-83</a>
                 <a class="header-top__left-mail" href="mailto:ucompany@gmail.com"><img src="images/e_mail.svg" alt="e-mail">ucompany@gmail.com</a>
+                <a class="main-btn bepartner" href="#">Стать партнером</a>
             </div>
             <div class="header-top__slogan">ALEYRA CERAMICS - надежный поставщик качественного керамогранита</div>
             <div class="header-top__right">
-                <div class="header-top__right-search"><img src="images/search-icon.svg" alt="search"> Поиск 
-                    <form id="searchform" method="get" action="">
-                    <input type="text" class="search-field" name="s" placeholder="Поиск" value="">
-                </form></div>
+
+                <div class="header-top__right-search">
+                    <form class="searchform" id="searchform" method="get" action="">
+                        <input type="text" class="search-field" name="s" placeholder="Поиск" value="">
+                        <div class="search-icon"></div>
+                    </form>
+                </div>
+
                 <div class="header-top__right-language"><img src="images/ru_flag.svg" alt="flag"> Рус</div>
             </div>
         </div>
@@ -56,8 +61,9 @@
             </nav>
 
             <div class="header-bottom__content-right">
-                <div class="header-bottom__content-right_partners">
-                    <a class="main-btn bepartner" href="#">Стать партнером</a>
+                
+                <div class="header-bottom__content-right_like">
+                    <a href="#"><i class="far fa-heart"></i></a>
                 </div>
                 <div class="header-bottom__content-right_login">
                     <a class="belogin" href="#">Войти<img src="images/login_icon.svg" alt="enter"></a>
@@ -332,33 +338,36 @@
             <div class="header-top__right-language"><img src="images/ru_flag.svg" alt="flag"> Рус</div>
         </div>
     </div>
-
-    <div class="mobile-menu__content-header_menu">
-        <ul>
-            <li><a href="#">Коллекции</a></li>
-            <li><a href="#">Проекты</a></li>
-            <li><a href="#">О компании</a></li>
-            <li><a href="#">Контакты</a></li>
-        </ul>
-    </div>
-
-    <div class="mobile-footer">
-        <div class="mobile-menu__content-header_contact">
-            <a href="tel:+79163819783"> <img src="images/phone.svg" alt="phone"> +7 916 381-97-83</a>
-            <a href="mailto:ucompany@gmail.com"><img src="images/e_mail.svg" alt="mail"> ucompany@gmail.com</a>
+  
+    <div class="mobile-menu-flex">
+        <div class="mobile-menu__content-header_menu">
+          <ul>
+              <li><a href="#">Коллекции</a></li>
+              <li><a href="#">Проекты</a></li>
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Контакты</a></li>
+          </ul>
         </div>
+  
+        <div class="mobile-footer">
+          <div class="mobile-menu__content-header_contact">
+              <a href="tel:+79163819783"> <img src="images/phone.svg" alt="phone"> +7 916 381-97-83</a>
+              <a href="mailto:ucompany@gmail.com"><img src="images/e_mail.svg" alt="mail"> ucompany@gmail.com</a>
+          </div>
+      
+          <div class="mobile-menu__content-header_social">
+              <ul>
+                  <li><a href="#"><img src="images/facebook_mob.svg" alt="facebook"></a></li>
+                  <li><a href="#"><img src="images/insta_mob.svg" alt="instagram"></a></li>
+                  <li><a href="#"><img src="images/whats_mob.svg" alt="whatsapp"></a></li>
+              </ul>
+          </div>
+      </div>
+     
+  
+    </div>
     
-        <div class="mobile-menu__content-header_social">
-            <ul>
-                <li><a href="#"><img src="images/facebook_mob.svg" alt="facebook"></a></li>
-                <li><a href="#"><img src="images/insta_mob.svg" alt="instagram"></a></li>
-                <li><a href="#"><img src="images/whats_mob.svg" alt="whatsapp"></a></li>
-            </ul>
-        </div>
-    </div>
-   
-
-</div>
+  </div>
 
 <ul class="social">
     <li><a href="#"><img src="images/facebook.svg" alt="facebook"></a></li>
@@ -366,7 +375,7 @@
     <li><a href="#"><img src="images/whatsapp.svg" alt="whatsapp"></a></li>
 </ul>
 
-
+<script src="https://kit.fontawesome.com/6997fd8dc6.js" crossorigin="anonymous"></script>
     <script src="js/app.min.js"></script>
 </body>
 </html>

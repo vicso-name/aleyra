@@ -8,7 +8,37 @@
 
 /* For 1024 Resolution */
 
-@media (max-width: 1024px)      
+@media (max-width: 1024px)  
+
+    .welcome
+        height: 430px
+    .welcome-text__title
+        font-size: 50px
+        line-height: 64px
+    .welcome-text__subtitle
+        font-size: 14px
+        line-height: 20px
+        max-width: 225px
+
+    .about
+        padding-bottom: 13px
+    .about::before
+        left: -275px
+    .about-content
+        width: 471px
+
+    //profile
+
+    .profile-main__content-block
+        grid-template-columns: 1fr
+        grid-gap: 20px   
+    .profile-main__content-title
+        margin-bottom: 40px
+    .profile-main__content-block_left
+        padding: 25px
+    .profile-main__content-block_right-description
+        max-width: 380px
+
 
     //breadcrumbs
     .breadcrumbs
@@ -30,22 +60,6 @@
         font-size: 14px
     .header-top__right-search
         right: 97px
-
-
-    .welcome-video::before
-        width:  448px  
-        background-size: cover
-
-    .welcome-description__title
-        font-size: 50px
-        line-height: 64px
-    .welcome-description__subtitle
-        font-size: 14px
-        width: 267px
-    .welcome .section-inner
-        height: 365px
-
-
     .collection-title
         font-size: 30px
         margin-bottom: 20px
@@ -63,6 +77,8 @@
         font-size: 12px
     .collection-content__item-title
         width: 165px
+
+    
 
 
     //collection
@@ -142,12 +158,39 @@
     .footer-menu li a
         font-size: 12px 
 
+    
+
 
 /* For 768 Resolution */
 
 @media (max-width: 768px) 
-    .mobile-footer
-        margin-top: 154px
+    .welcome
+        height: 294px
+        
+    .about
+        padding-bottom: 0
+        &::before
+            display: none
+    .about-content
+        width: 100%
+        position: relative
+        &::before
+            content: ""
+            position: absolute
+            background-image: url(../images/mini_line.svg)
+            background-repeat: no-repeat
+            right: 0
+            width: 150px
+            height: 100px
+            right: 0
+            bottom: 0
+            top: 0
+            bottom: 0
+            z-index: 99999
+    .breadcrumbs
+        padding-top: 25px
+    .profile-main
+        margin-top: 25px
     .social
         display: none
     .mobile-menu__content
@@ -264,6 +307,17 @@
 /* For 640 Resolution */  
 
 @media (max-width: 640px) 
+    .welcome
+        flex-direction: column
+        height: 440px
+    .welcome-text
+        align-items: flex-start
+        padding-left: 10px
+    .welcome-text__slogan
+        font-size: 10px
+    .welcome-text__title
+        font-size: 30px
+        line-height: 38px
     .breadcrumbs
         padding-top: 17px
     .look-collection__text
@@ -287,7 +341,11 @@
     .sidebar
         margin-bottom: 10px
 
-    
+    .collection
+        margin-top: 20px
+    .collection-title
+        margin-bottom: 15px
+
     .footer .section-inner
         padding-top: 40px
 
@@ -316,6 +374,9 @@
 /* For 480 Resolution */
 
 @media (max-width: 485px)
+    .profile-main__content-block_right
+        flex-direction: column
+        align-items: end
     .footer-menu li a
         font-size: 10px 
     .footer-menu li
