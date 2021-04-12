@@ -390,6 +390,10 @@ body
         line-height: 58px
         letter-spacing: 0em
         margin-bottom: 40px
+    &-content__repair
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        grid-gap: 20px 
     &-content
         display: grid
         grid-template-columns: repeat(4, 1fr)
@@ -491,6 +495,14 @@ body
         margin-bottom: 48px
     &-content
         width: 850px  
+        p
+            @include font-jost
+            font-size: 18px
+            font-style: normal
+            font-weight: 300
+            line-height: 26px
+            letter-spacing: 0em
+            text-align: left
     .section-inner
         display: flex
         justify-content: flex-end
