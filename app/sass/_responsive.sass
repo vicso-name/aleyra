@@ -1,0 +1,412 @@
+
+/* For 1366 Resolution */  
+
+@media (min-width: 1030px) and (max-width: 1366px)
+   .profile-main__content-block_right-description
+       max-width: 550px
+
+
+/* For 1024 Resolution */
+
+@media (max-width: 1024px)      
+
+    //breadcrumbs
+    .breadcrumbs
+        padding-top: 80px
+
+    //index
+    .header-top
+        grid-template-columns: 600px 1fr
+    .main-btn.bepartner
+        display: none
+
+    .header-top__slogan
+        display: none
+    .header-bottom__nav-list li a
+        font-size: 10px
+    .header-bottom__nav-list li
+        margin-right: 22px
+    .header-bottom__content-right_login .belogin
+        font-size: 14px
+    .header-top__right-search
+        right: 97px
+
+
+    .welcome-video::before
+        width:  448px  
+        background-size: cover
+
+    .welcome-description__title
+        font-size: 50px
+        line-height: 64px
+    .welcome-description__subtitle
+        font-size: 14px
+        width: 267px
+    .welcome .section-inner
+        height: 365px
+
+
+    .collection-title
+        font-size: 30px
+        margin-bottom: 20px
+    .collection
+        margin-top: 40px
+    .collection-content__item-meta .new
+        font-size: 10px
+    .collection-content__item-meta .image
+        margin-left: 5px
+        width: 20px
+    .collection-content__item-meta
+        right: 15px
+        top: 15px
+    .collection-content__item-title .link
+        font-size: 12px
+    .collection-content__item-title
+        width: 165px
+
+
+    //collection
+    .ceramics-title
+        font-size: 25px
+        line-height: 38px
+        margin-bottom: 15px
+    .grid__container
+        height: 407px
+    .grid__container .item-content__title a
+        font-size: 12px
+    .collection-content__item-overlay .look
+        font-size: 12px
+    .grid__container .item-content .look-collection
+        font-size: 12px
+
+    //inner collection
+    .upload
+        padding-top: 40px
+    .upload-content
+        flex-direction: column
+        align-items: end
+        padding-right: 30px
+        padding-left: 30px
+        margin-bottom: 40px
+    .upload-content__description
+        font-size: 16px
+        line-height: 22.98px
+        margin-bottom: 20px
+    .collection
+        padding-bottom: 0
+    .collection-content
+        margin-bottom: 15px
+    .collection-inner__title .title
+        font-size: 25px
+        line-height: 38px
+    .collection-inner__content-item_title .link
+        font-size: 12px
+        line-height: 17px
+    .collection-inner__content-item_title
+        margin-top: 10px
+        margin-bottom: 0
+
+    //project page
+    .single-project__image
+        margin-top: 15px
+        height: 297px
+    .single-project__image img
+        height: 100%
+        object-fit: fill
+    .single-project__home-left
+        display: flex
+        flex-basis: 50%
+        align-items: center
+    .single-project__home-right
+        flex-basis: 50%
+    .single-project__home-left_content h2
+        font-size: 30px
+        line-height: 38.44px
+    .single-project__model-wrapper_title h2
+        font-size: 30px
+        line-height: 38.44px
+    .single-project__model-wrapper
+        margin-top: 30px
+    .single-project__home-left_content address
+        font-size: 14px
+        line-height: 26px
+    .single-project__description p
+        font-size: 16px
+    .single-project__description
+        padding-top: 15px
+        padding-bottom: 40px
+   
+    //footer
+    .footer-menu li
+        margin-right: 34px
+    .footer-menu li a
+        font-size: 12px 
+
+
+/* For 768 Resolution */
+
+@media (max-width: 768px) 
+    .mobile-footer
+        margin-top: 154px
+    .social
+        display: none
+    .mobile-menu__content
+        padding-top: 30px
+        padding-bottom: 30px
+        padding-right: 20px
+        padding-left: 20px
+        width: 236px
+        background-color: #131313
+        position: fixed
+        top: 0
+        right: -500px
+        height: 100vh
+        z-index: 999999
+        &.active
+            right: 0
+            display: block
+        &-header
+            display: flex
+            justify-content: space-between
+            padding-left: 10px
+            &_login
+                padding-bottom: 28px
+                .user_login
+                    @include font-jost
+                    color: #ffffff
+                    text-transform: uppercase
+                    font-size: 14px
+                    font-style: normal
+                    font-weight: 400
+                    line-height: 20px
+                    letter-spacing: 0.12em
+                    text-align: left
+            &_language
+            &_menu
+                border-top: 1px solid #3A3A3A
+                ul
+                    padding: 0
+                    margin: 0
+                    list-style-type: none
+                    padding-top: 31px
+                    padding-left: 10px
+                    li > a
+                        @include font-jost
+                        text-transform: uppercase
+                        color: #ffffff
+                        font-size: 14px
+                        font-style: normal
+                        font-weight: 400
+                        line-height: 20px
+                        letter-spacing: 0.12em
+                        text-align: left
+                        display: inline-block
+                        padding-bottom: 30px
+            &_contact
+                padding-left: 10px
+                a
+                    display: inline-block
+                    @include font-jost
+                    color: #ffffff
+                    font-size: 14px
+                    font-style: normal
+                    font-weight: 400
+                    line-height: 26px
+                    letter-spacing: 0em
+                    text-align: left
+            &_social
+                margin-top: 20px
+                ul
+                    padding: 0
+                    margin: 0
+                    list-style-type: none
+                    display: flex   
+                    justify-content: center 
+                    li
+                        margin-right: 13.33px
+                        &:last-child
+                            margin-right: 0
+
+    .header-top__right-search
+        right: 50px
+        top: 22px
+    .header
+        display: none
+    .header-mobile
+        padding-top: 10px
+        display: block
+        background-color: #000000
+        &__content
+            display: flex
+            &-right
+                flex-basis: 50%
+                &_logo
+                    margin-bottom: 11px
+                &_slogan
+                    width: 142px
+                    p
+                        @include font-jost
+                        color: #ffffff
+                        text-transform: uppercase
+                        font-size: 8px
+                        font-style: normal
+                        font-weight: 300
+                        line-height: 9px
+                        letter-spacing: 0.09em
+                        text-align: left
+            &-left
+                flex-basis: 50%
+                display: flex
+                flex-direction: column
+                align-items: flex-end
+                justify-content: space-around
+            
+/* For 640 Resolution */  
+
+@media (max-width: 640px) 
+    .breadcrumbs
+        padding-top: 17px
+    .look-collection__text
+        display: none
+    .grid__container
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 200px 318px 200px
+        grid-template-areas: "content_two content-three" "sidebar sidebar" "content_one content_one"
+        grid-gap: unset
+        height: 701px
+    .grid__container .item-content__title
+        height: auto
+        padding-top: 5px
+        line-height: 16.8px
+    .content_two
+        margin-right: 7px
+        margin-bottom: 10px
+    .content-three
+        margin-left: 7px
+        margin-bottom: 10px
+    .sidebar
+        margin-bottom: 10px
+
+    
+    .footer .section-inner
+        padding-top: 40px
+
+    .collection-content
+        grid-template-columns: repeat(2, 1fr)
+        grid-gap: 14px
+
+    .about-content
+        flex-basis: 100%
+
+    .main-btn.in-footer
+        display: none
+
+    .footer-meta
+        margin-bottom: 15px
+        
+    .footer-meta__contact
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+        
+
+
+/* For 480 Resolution */
+
+@media (max-width: 485px)
+    .footer-menu li a
+        font-size: 10px 
+    .footer-menu li
+        margin-right: 20px
+    .footer-meta__contact
+        flex-direction: column
+        align-items: end
+        .logo
+            margin-bottom: 15px
+        .phone
+            display: inline-block
+            margin-bottom: 8px
+    .footer-meta__mobile-description
+        display: block
+    .footer-meta__mobile-description ul
+        font-size: 12px
+    .footer-copiright__adress
+        display: none
+    .footer-meta
+        align-items: flex-end
+    .footer-copiright
+        display: flex
+        flex-direction: column-reverse
+    .footer-copiright__privacy .convention, .footer-copiright__privacy .privacy
+        font-size: 10px
+    .footer-copiright__privacy
+        justify-content: space-between
+    .footer-copiright__content
+        margin-top: 8px
+    .footer-meta__contact .phone
+        font-size: 12px
+    .footer-meta__contact .mail
+        font-size: 12px
+
+    .collection-content__item:hover .look
+        display: none
+    .collection-content__wrapper
+        flex: 1 0 50%
+    .header-top__right-search .searchform input.active
+        width: 110px
+    .gallery-grid
+        height: 240vw
+    .gallery-grid__item-content
+        font-size: 10px
+        line-height: 14px
+    .gallery-grid__item:nth-child(1) .s-content-block
+        left: -11px
+        width: 52%
+        height: 62vw
+    .gallery-grid__item:nth-child(2) .s-content-block
+        left: 43.1vw
+        width: 53%
+        height: 68vw
+    .gallery-grid__item:nth-child(5) .s-content-block
+        top: 69vw
+        left: -11px
+        width: 52%
+        height: 62vw
+    .gallery-grid__item:nth-child(6) .s-content-block
+        left: 43.1vw
+        width: 53%
+        height: 46vw
+        top: 75vw
+    .gallery-grid__item:nth-child(3) .s-content-block
+        top: 134vw
+        left: -11px
+        width: 52%
+        height: 43vw
+    .gallery-grid__item:nth-child(4) .s-content-block
+        left: 43.1vw
+        width: 53%
+        height: 76vw
+        top: 124vw
+    .gallery-grid__item:nth-child(7) .s-content-block
+        top: 180vw
+        left: -11px
+        width: 52%
+        height: 55vw
+    .gallery-grid__item:nth-child(8) .s-content-block
+        left: 43.1vw
+        width: 53%
+        height: 32vw
+        top: 203vw
+/* For 360 Resolution */  
+  
+@media (max-width: 370px)
+    .header-top__right-search .searchform input.active
+        width: 80px
+    .footer-menu
+        flex-direction: column
+    .footer-copiright__privacy .convention
+        margin-left: 0
+
+  

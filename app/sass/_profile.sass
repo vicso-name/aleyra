@@ -1,0 +1,107 @@
+.profile-main
+    margin-top: 118px
+    &__content
+        margin-bottom: 57px
+        &-title
+            h2
+                @include font-jost
+                font-size: 50px
+                color: #ffffff
+                text-transform: uppercase
+                font-style: normal
+                font-weight: 200
+                line-height: 55px
+                letter-spacing: 0em
+                text-align: left
+        &-block
+            display: grid
+            grid-template-columns: 1fr 3fr
+            grid-column-gap: 14px
+            &_left
+                background-color: #191919
+                display: flex
+                align-items: center
+                justify-content: space-between
+                padding-right: 51px
+                padding-left: 45px
+            &_right
+                display: flex
+                justify-content: space-between
+                align-items: center
+                padding: 40px
+                border: 1px solid #454545
+                &-description
+                    @include font-jost
+                    font-size: 16px
+                    font-style: normal
+                    font-weight: 300
+                    line-height: 23px
+                    letter-spacing: 0em
+                    max-width: 814px
+                    margin-right: 59px
+.profile__data-img
+    margin-right: 21px
+    .profile-picture
+        position: relative
+        width: 90px
+        height: 90px
+        .profile_image
+            img
+                border-radius: 50%
+.file-upload
+    position: absolute
+    top: 0
+    right: 0
+    overflow: hidden
+    width: 28px
+    height: 28px
+    border-radius: 50%
+    cursor: pointer
+    input
+        width: 28px
+        &::before
+            background-image: url(../images/pencile.svg)
+            content: ""
+            width: 28px
+            height: 28px
+            position: absolute
+            cursor: pointer
+        
+              
+.user-mail__wrapper
+    display: flex
+    flex-direction: column
+    
+.user-mail__data
+    @include font-jost
+    font-size: 16px
+    font-style: normal
+    font-weight: 500
+    line-height: 23px
+    letter-spacing: 0em
+    margin-bottom: 15px
+
+.to-collection
+    &-title
+        margin-bottom: 37px
+        h2
+            @include font-jost
+            font-size: 50px
+            color: #ffffff
+            text-transform: uppercase
+            font-style: normal
+            font-weight: 200
+            line-height: 55px
+            letter-spacing: 0em
+            text-align: left
+        p
+            font-family: Jost
+            font-size: 16px
+            font-style: normal
+            font-weight: 300
+            line-height: 23px
+            letter-spacing: 0em
+            text-align: left
+
+
+

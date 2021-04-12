@@ -1,0 +1,110 @@
+.single-project__model-wrapper
+    margin-top: 53px
+    &_title
+        margin-bottom: 37px
+        h2
+            @include font-jost
+            color: #ffffff
+            text-transform: uppercase
+            font-size: 50px
+            font-style: normal
+            font-weight: 200
+            line-height: 58px
+            letter-spacing: 0em
+
+    
+.single-project
+    &__image
+        margin-top: 44px
+        img
+            max-width: 100%
+    &__home
+        display: flex
+        padding-top: 37px
+        padding-bottom: 60px
+        &-left
+            flex-basis: 150%
+            position: relative
+            &_content
+                h2
+                    @include font-jost
+                    text-transform: uppercase
+                    color: #ffffff
+                    font-size: 50px
+                    font-style: normal
+                    font-weight: 200
+                    line-height: 64px
+                    letter-spacing: 0em
+                address
+                    @include font-jost
+                    font-size: 18px
+                    font-style: normal
+                    font-weight: 300
+                    line-height: 26px
+                    letter-spacing: 0em
+                    text-align: left
+                    img
+                        margin-right: 12px
+        &-right
+            flex-basis: 210%
+            position: relative
+            &::before
+                content: ""
+                position: absolute
+                height: 100%
+                width: 1px
+                background-color: #454545
+                left: -49px
+    &__gallery
+        display: flex
+        flex-wrap: wrap
+        gap: 20px
+        &-item
+            flex-grow: 1
+            flex-basis: 16%
+            overflow: hidden
+            img
+                max-width: 100%
+                object-fit: cover
+                transition: transform .8s ease
+            &:hover
+                img
+                    transform: scale(1.4)
+    &__description
+        padding-top: 60px
+        padding-bottom: 60px
+        border-bottom: 1px solid #454545
+        p
+            @include font-jost
+            font-size: 18px
+            font-style: normal
+            font-weight: 300
+            line-height: 26px
+            letter-spacing: 0em
+            text-align: left
+            margin-bottom: 0
+    &__model
+        display: flex
+        gap: 20px
+        padding-bottom: 84px
+        &-item
+            position: relative
+            &_favorite
+                position: absolute
+                right: 24px
+                top: 24px
+            &_content
+                &-overlay 
+            &_title
+                margin-top: 27px
+                .link
+                    @include font-jost
+                    color: #ffffff
+                    text-transform: uppercase
+                    font-size: 15px
+                    font-style: normal
+                    font-weight: 400
+                    line-height: 22px
+                    letter-spacing: 0em
+                    text-align: left
+

@@ -1,0 +1,109 @@
+// === ceramist ===  
+
+.ceramics
+    &-title
+        @include font-jost
+
+        text-transform: uppercase
+        color: #ffffff
+        font-size: 50px
+        font-style: normal
+        font-weight: 200
+        line-height: 64px
+        letter-spacing: 0em
+        margin-bottom: 30px
+        margin-top: 13px
+
+.grid__container
+  display: grid
+  height: 860px
+  grid-gap: 1em
+  grid-template-columns: 1fr 1fr 2fr
+  grid-template-rows: 1fr 1fr
+  grid-template-areas: "content_two content-three sidebar"  "content_one content_one sidebar"
+  &.project-page
+    grid-template-columns: 2fr 1fr 1fr
+    grid-template-rows: 1fr 1fr
+    grid-template-areas: "sidebar content-three content_two"  "sidebar content_one content_one" 
+  .item
+    background-color: green
+    display: block
+    cursor: pointer
+    overflow: hidden
+    &-content
+      position: relative
+      background-repeat: no-repeat
+      background-size: cover
+      height: 100%
+      width: 100%
+      &__title
+        position: absolute
+        left: 0
+        right: 0
+        background-color: #111111
+        bottom: 0
+        height: 30px
+        line-height: 40px
+        a
+            @include font-jost
+            text-transform: uppercase
+            color: #ffffff
+            font-size: 15px
+            font-style: normal
+            font-weight: 400
+            line-height: 19px
+            letter-spacing: 0em
+
+      .look-collection
+        @include font-jost
+        font-size: 16px
+        font-style: normal
+        font-weight: 400
+        line-height: 23px
+        letter-spacing: 0em
+        color: #ffffff  
+        opacity: 0
+        display: block
+        height: 100%
+        background-color: rgba(0,0,0, .6)
+        transition: all .5s ease
+        img
+            position: absolute
+            bottom: 66px
+            left: 25%
+        &__text
+          position: absolute
+          bottom: 60px
+          left: 32px
+          &::before
+           position: absolute
+           content: ""
+           background-image: url(../images/arrow.svg)    
+           width: 55px
+           height: 10px
+           background-repeat: no-repeat
+           bottom: 4px
+           right: -60px 
+    &:hover
+      .look-collection
+        opacity: 1
+        .look-collection__text
+          animation: 1s linear pulse
+          @keyframes pulse
+            0%
+              left: -250px 
+            50%
+              left:  32px
+.sidebar
+  grid-area: sidebar
+  
+.content_one
+  grid-area: content_one
+  
+.content_two
+  grid-area: content_two
+  
+.content-three
+  grid-area: content-three 
+
+// === ceramist END ===  

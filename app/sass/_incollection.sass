@@ -1,0 +1,86 @@
+// === collection inner === 
+
+.collection-inner
+    &__title
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .title
+            @include font-jost
+
+            text-transform: uppercase
+            color: #ffffff
+            font-size: 50px
+            font-style: normal
+            font-weight: 200
+            line-height: 64px
+            letter-spacing: 0em
+            margin-bottom: 30px
+            margin-top: 13px
+        .main-btn
+            margin-bottom: 20px
+    &__content
+        display: inline-flex
+        flex-wrap: wrap
+        gap: 18px
+        &-wrapper
+            flex: 1 16%
+        &-item
+            position: relative
+            overflow: hidden
+            display: block
+            &_img
+                img
+                    transform: scale(1.2)
+                    transition: all .5s ease
+                    width: 100%
+                    max-width: 100%
+            &_overlay
+                opacity: 0
+                position: absolute
+                top: 0
+                bottom: 0
+                left: 0
+                right: 0
+                background: rgba(0,0,0, .6)
+                transition: all .5s ease                    
+                .look
+                    @include font-jost
+                    color: #ffffff
+                    font-size: 16px
+                    font-style: normal
+                    font-weight: 400
+                    line-height: 23px
+                    letter-spacing: 0em
+                    text-align: left
+                    position: absolute
+                    left: 32px
+                    bottom: 36px
+            &:hover
+                .look
+                    animation: 1s linear pulse
+                @keyframes pulse
+                    0%
+                        left: -250px 
+                    50%
+                        left:  32px
+                .collection-inner__content-item_img
+                    img
+                        transform: scale(1)
+                .collection-inner__content-item_overlay
+                    opacity: 1
+            &_title
+                margin-top: 22px
+                margin-bottom: 25px
+                .link
+                    @include font-jost
+                    text-transform: uppercase
+                    color: #ffffff
+                    font-size: 15px
+                    font-style: normal
+                    font-weight: 400
+                    line-height: 19px
+                    letter-spacing: 0em
+
+
+// === collection inner END === 
