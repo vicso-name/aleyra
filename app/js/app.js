@@ -24,6 +24,10 @@ $(document).ready(function() {
 		}
 	});
 
+	$('#menu-close').on('click', function(){
+		$(".mobile-menu__content").removeClass('active');
+	})
+
 	  
 
 })

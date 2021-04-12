@@ -5,13 +5,21 @@
 @mixin font-hari
     font-family: 'Jomolhari', serif
 
-
-
 // === common ===    
 body
     background-color: #111111  
     color: #ffffff 
     background-repeat: no-repeat
+
+
+.menu-close
+    position: absolute
+    left: -29px
+    width: 30px
+    height: 30px
+    background-color: #111111
+    img
+        filter: invert(1)
 
 .horizont-line
     width: 100%
@@ -43,7 +51,7 @@ body
 
 
 .breadcrumbs
-    padding-top: 121px
+    padding-top: 100px
     .kama_breadcrumbs
         a
             @include font-jost
@@ -101,9 +109,9 @@ body
         content: ""
         background: #ffffff
         position: absolute
-        transition: all 5s ease
+        transition: all .3s ease
         transform: scaleX(0)
-        transition: transform 0.3s
+        transition: transform .3s
         transform-origin: bottom left
         left: 0
         right: 0
@@ -115,6 +123,12 @@ body
         text-decoration: none
         &::before
             transform: scaleX(1)  
+    &.bepartner
+        font-size: 10px
+        padding-left: 13px
+        padding-right: 13px
+        padding-top: 8px
+        padding-bottom: 8px
     &.change-data
         font-size: 10px
         width: 214px
@@ -133,14 +147,14 @@ body
 
 // === header ===
 .header
-    background-color: #000000
+    background-color: #111111
 .header-mobile
     display: none
 .header-top
     display: grid
     grid-template-columns: 600px auto 1fr
-    padding-top: 16px
-    padding-bottom: 19px
+    padding-top: 4px
+    padding-bottom: 4px
     &__left
         flex-basis: 300px
         &-phone
@@ -169,7 +183,8 @@ body
                 margin-right: 10.81px
     &__slogan
         @include font-jost
-
+        display: flex
+        align-items: center
         text-align: center
         font-size: 10px
         font-weight: 400
@@ -181,11 +196,21 @@ body
         justify-content: flex-end
         position: relative
         &-language
-            padding-right: 15px
+            padding-right: 22px
+            padding-top: 3px
+            position: relative
+            &::before
+                content: ""
+                position: absolute
+                width: 1px
+                height: 24px
+                left: -23px
+                top: 5px
+                background-color:#454545
         &-search
             cursor: pointer
             position: absolute
-            right: 103px
+            right: 110px
             .searchform
                 position: relative
                 .search-icon
@@ -220,7 +245,7 @@ body
                     background: #000000
                     color: #ffffff
                     border-bottom: 1px solid #ffffff
-                    transition: width .5s ease
+                    transition: width .3s ease
                     &::placeholder
                         color: #ffffff
                     &.active
@@ -234,7 +259,7 @@ body
     z-index: 99
     background-color: rgba(0,0,0, .3)
     &__content
-        height: 62px
+        height: 76px
         display: flex    
         align-items: center           
         justify-content: space-between
@@ -251,7 +276,7 @@ body
                         color: #ffffff
                         font-size: 17px
                         .fa-heart
-                            transition: all .5s ease
+                            transition: all .2s ease
                         &:hover
                             .fa-heart
                                 transform: scale(1.1)
@@ -288,7 +313,8 @@ body
                     margin-right: 0
                 a
                     @include font-jost
-
+                    position: relative
+                    overflow: hidden
                     color: #ffffff
                     text-transform: uppercase
                     font-size: 14px
@@ -296,6 +322,23 @@ body
                     font-weight: 400
                     line-height: 20px
                     letter-spacing: 0.12em
+                    &::before
+                        content: ""
+                        position: absolute
+                        width: 100%
+                        height: 1px
+                        background-color: #dc7d26
+                        top: 45px
+                        opacity: 0
+                    &:hover
+                        text-decoration: none
+                        &::before
+                            opacity: 1
+                    &.active
+                        &::before
+                            opacity: 1
+
+                        
     
 
 // === header end ===  
@@ -344,10 +387,10 @@ body
         &__subtitle    
             @include font-jost
             max-width: 350px
-            font-size: 22px
+            font-size: 18px
             font-style: normal
             font-weight: 300
-            line-height: 25px
+            line-height: 20px
             letter-spacing: 0em
     &-video
         position: relative
@@ -364,7 +407,7 @@ body
             top: 50%
             cursor: pointer
             img
-                transition: transform .5s ease
+                transition: transform .3s ease
             &:hover
                 img
                     transform: scale(1.2)
@@ -386,7 +429,7 @@ body
         text-transform: uppercase
         font-size: 50px
         font-style: normal
-        font-weight: 200
+        font-weight: 100
         line-height: 58px
         letter-spacing: 0em
         margin-bottom: 40px
@@ -405,7 +448,7 @@ body
             &-img
                 img
                     transform: scale(1.2)
-                    transition: all .5s ease
+                    transition: all .3s ease
                     width: 100%
             &-meta
                 display: flex
@@ -435,7 +478,7 @@ body
                 left: 0
                 right: 0
                 background: rgba(0,0,0, .6)
-                transition: all .5s ease
+                transition: all .3s ease
                 .look
                     @include font-jost
                     color: #ffffff
@@ -450,7 +493,7 @@ body
                     bottom: 36px                
             &:hover
                 .look
-                    animation: 1s linear pulse
+                    animation: .3s linear pulse
                 @keyframes pulse
                     0%
                         left: -250px 
@@ -541,7 +584,7 @@ body
                 line-height: 19px
                 letter-spacing: 0em
                 opacity: 0
-                transition: all .5s ease
+                transition: all .3s ease
                 &::before
                     content: ""
                     position: absolute
