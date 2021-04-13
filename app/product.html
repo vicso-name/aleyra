@@ -14,8 +14,7 @@
 
 </head>
 
-<body style="background-image: url('images/product_bg.png'); background-position: right;">
-    <div class="wrapper">
+<body style="background-image: url('images/product_bg.png'); background-position: inherit;">
 
      <header class="header">
 
@@ -65,7 +64,7 @@
                         <a href="#"><i class="far fa-heart"></i></a>
                     </div>
                     <div class="header-bottom__content-right_login">
-                        <a class="belogin" href="#">Войти<img src="images/login_icon.svg" alt="enter"></a>
+                        <span id="register-button" class="belogin" >Войти<img src="images/login_icon.svg" alt="enter"></span>
                     </div>
                 </div>
 
@@ -148,6 +147,47 @@
                 <!-- product slider -->
                 <div class="product-content__slider">
 
+                    <div class="product-content__slider-guts">
+                        <div class="product-image-carousels">
+
+                            <!-- Thumbnail track carousel -->
+                            <div class="thumbnails-slider">
+
+                              <button class="thumbnail-button">
+                                <img src="images/slider.jpg" alt="slider">
+                              </button>
+                          
+                              <button class="thumbnail-button">
+                                <img src="images/slider.jpg" alt="slider">
+                              </button>
+                          
+                              <button class="thumbnail-button">
+                                <img src="images/slider.jpg" alt="slider">
+                              </button>
+                              
+                            </div>
+                          
+                            <!-- Main image carousel -->
+
+                            <div class="main-image-slider">
+
+                              <div>
+                                <img src="images/slider.jpg" alt="slider">
+                              </div>
+
+                              <div>
+                                <img src="images/slider.jpg" alt="slider">
+                              </div>
+
+                              <div>
+                                <img src="images/slider.jpg" alt="slider">
+                              </div>
+
+                            </div>
+                            
+                          </div>
+                    
+                    </div>
 
                 </div>
                 <!-- product slider end-->
@@ -159,55 +199,68 @@
                     </div>
                     <div class="product-content__details-buttons">
                         <a href="#" class="main-btn price-request">Запросить цену</a>
-                        <a href="#" class="main-btn"> <i class="far fa-heart"></i> Добавить в свою коллекцию</a>
+                        <a href="#" class="main-btn addtocollection"> <i class="far fa-heart"></i> Добавить в свою коллекцию</a>
                     </div>
                     <div class="product-content__details-description">
+                            <div class="product-content__details-description_wrapper">
+                                <ul class="product-content__details-description_list">
+                                    <li>
+                                        <div class="product-content__details-description_list-item">Тип поверхности</div>
+                                        <div class="product-content__details-description_list-item">Глянцевая</div>
+                                    </li>
+                                    <li>
+                                        <div class="product-content__details-description_list-item">Толщина плитки / мм</div>
+                                        <div class="product-content__details-description_list-item">30</div>
+                                    </li>
+                                    <li>
+                                        <div class="product-content__details-description_list-item">Формат / см</div>
+                                        <div class="product-content__details-description_list-item">60X120</div>
+                                    </li>
+                                    <li>
+                                        <div class="product-content__details-description_list-item">Вес упаковки, кг</div>
+                                        <div class="product-content__details-description_list-item">30,00</div>
+                                    </li>
+                                    <li>
+                                        <div class="product-content__details-description_list-item">Вес изделия</div>
+                                        <div class="product-content__details-description_list-item">16,64</div>
+                                    </li>
+                                    <li>
+                                        <div class="product-content__details-description_list-item">Кол-во в упакове / шт.</div>
+                                        <div class="product-content__details-description_list-item">4</div>
+                                    </li>
+                                    <li>
+                                        <div class="product-content__details-description_list-item">Кв/м в упаковке</div>
+                                        <div class="product-content__details-description_list-item">30</div>
+                                    </li>
+                                    <li>
+                                        <div class="product-content__details-description_list-item">Кол-во в паллете / кор.</div>
+                                        <div class="product-content__details-description_list-item">30</div>
+                                    </li>
+                                </ul>
+                                <a class="main-btn" href="#"> <img src="images/face_download.svg" alt="face"> скачать лица</a>
+                            </div>
+                           
 
-                        <ul class="product-content__details-description_list">
-                            <li>
-                                <div class="product-content__details-description_list-item">Тип поверхности</div>
-                                <div class="product-content__details-description_list-item">Глянцевая</div>
-                            </li>
-                            <li>
-                                <div class="product-content__details-description_list-item">Толщина плитки / мм</div>
-                                <div class="product-content__details-description_list-item">30</div>
-                            </li>
-                            <li>
-                                <div class="product-content__details-description_list-item">Формат / см</div>
-                                <div class="product-content__details-description_list-item">60X120</div>
-                            </li>
-                            <li>
-                                <div class="product-content__details-description_list-item">Вес упаковки, кг</div>
-                                <div class="product-content__details-description_list-item">30,00</div>
-                            </li>
-                            <li>
-                                <div class="product-content__details-description_list-item">Вес изделия</div>
-                                <div class="product-content__details-description_list-item">16,64</div>
-                            </li>
-                            <li>
-                                <div class="product-content__details-description_list-item">Кол-во в упакове / шт.</div>
-                                <div class="product-content__details-description_list-item">4</div>
-                            </li>
-                            <li>
-                                <div class="product-content__details-description_list-item">Кв/м в упаковке</div>
-                                <div class="product-content__details-description_list-item">30</div>
-                            </li>
-                            <li>
-                                <div class="product-content__details-description_list-item">Кол-во в паллете / кор.</div>
-                                <div class="product-content__details-description_list-item">30</div>
-                            </li>
-                        </ul>
+                            
+                        
                         
                         <div class="product-content__details-description_text">
                             <p>При создании генератора мы использовали небезизвестный универсальный код речей.</p>
                             <p>Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.
                             </p>
                         </div>
+
                     </div>
                 </div>
             </div>
 
             <!-- product content end-->
+
+            <div class="product-mobile__description">
+                <p>При создании генератора мы использовали небезизвестный универсальный код речей.</p>
+                <p>Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.
+                </p>
+            </div>
 
             <!--  upload Section -->
             <section class="upload">
@@ -233,6 +286,9 @@
                 <div class="related-product__content">
 
                     <div class="related-product__content-wrapper">
+                        <div class="add-to-favorite active">
+                            <span><i class="far fa-heart"></i></span>
+                        </div>
                         <a href="#" class="related-product__content-wrapper_item">
                             <div class="related-product__content-wrapper_item-img">
                                 <img src="images/inner-collection/inner_eight.jpg" alt="collection-img">
@@ -243,6 +299,9 @@
                         </div>
                     </div>
                     <div class="related-product__content-wrapper">
+                        <div class="add-to-favorite">
+                            <span><i class="far fa-heart"></i></span>
+                        </div>
                         <a href="#" class="related-product__content-wrapper_item">
                             <div class="related-product__content-wrapper_item-img">
                                 <img src="images/inner-collection/inner_one.jpg" alt="collection-img">
@@ -253,6 +312,9 @@
                         </div>
                     </div>
                     <div class="related-product__content-wrapper">
+                        <div class="add-to-favorite">
+                            <span><i class="far fa-heart"></i></span>
+                        </div>
                         <a href="#" class="related-product__content-wrapper_item">
                             <div class="related-product__content-wrapper_item-img">
                                 <img src="images/inner-collection/inner_two.jpg" alt="collection-img">
@@ -263,6 +325,9 @@
                         </div>
                     </div>
                     <div class="related-product__content-wrapper">
+                        <div class="add-to-favorite">
+                            <span><i class="far fa-heart"></i></span>
+                        </div>
                         <a href="#" class="related-product__content-wrapper_item">
                             <div class="related-product__content-wrapper_item-img">
                                 <img src="images/inner-collection/inner_three.jpg" alt="collection-img">
@@ -273,6 +338,9 @@
                         </div>
                     </div>
                     <div class="related-product__content-wrapper">
+                        <div class="add-to-favorite">
+                            <span><i class="far fa-heart"></i></span>
+                        </div>
                         <a href="#" class="related-product__content-wrapper_item">
                             <div class="related-product__content-wrapper_item-img">
                                 <img src="images/inner-collection/inner_four.jpg" alt="collection-img">
@@ -299,9 +367,9 @@
     </main>
 
 
-      <!--  Footer -->
+    <!--  Footer -->
 
-      <footer class="footer" style="background-image: url(images/footer_bg.png);">
+    <footer class="footer" style="background-image: url(images/footer_bg.png);">
         <section class="section-inner">
 
                 <ul class="footer-menu">
@@ -313,9 +381,16 @@
 
                 <div class="footer-meta">
                     <div class="footer-meta__contact">
-                        <img class="logo" src="/images/main_logo.svg" alt="footer_logo">
+                        <img class="logo" src="images/main_logo.svg" alt="footer_logo">
                         <a class="phone" href="tel:+79163819783"><img src="images/phone.svg" alt="phone">+7 916 381-97-83</a>
                         <a class="mail" href="mailto:ucompany@gmail.com"><img src="images/e_mail.svg" alt="e-mail">ucompany@gmail.com</a>
+                    </div>
+                    <div class="footer-meta__mobile-description">
+                        <ul>
+                            <li>ООО «АЛЕЙРА-КЕРАМИКА»</li>
+                            <li>115114, г. Москва, проезд 2-й Павелецкий, дом 5,</li>
+                            <li>строение 1, эт/помещ. 5/28</li>
+                        </ul>
                     </div>
                     <a class="main-btn in-footer" href="#">Стать партнером</a>
                 </div>
@@ -339,9 +414,12 @@
         </div>
 
     </footer>
-<!--  Footer END -->
+    <!--  Footer END -->
 
 <div class="mobile-menu__content">
+    <div id="menu-close" class="menu-close">
+        <img src="images/close-icone.svg" alt="close">
+    </div>
 
     <div class="mobile-menu__content-header">
         <div class="mobile-menu__content-header_login">
@@ -381,7 +459,104 @@
     </div>
     
   </div>
+
+<!--Register Form-->
+
+<div id="form-register" class="form-register closed">
+    <div id="close-registerform" class="close-registerform">
+        <img src="images/close-icone.svg" alt="close-registerform">
+    </div>
+    <div class="form-register__content">
+        
+        <div class="form-header">
+            <h3>Регистрация аккаунта</h3>
+        </div>
+        <!--tabs-->
+        <div class="tabs">
+            <div id="tab-1" class="tab-item tab-border"> <div class="tab-item__circle"></div> Физическое лицо</div>
+            <div id="tab-2" class="tab-item"> <div class="tab-item__circle"></div> Юридическое лицо</div>
+        </div>
+        <!--tabs end-->
+
+        <!--tabs content-->
+        <div class="tab-content">
+
+            <!-- Tab Content 1 -->
+            <div id="tab-1-content" class="tab-content-item show">
+               <form id="client-registration">
+                    <div class="input_cont">
+                        <label for="user_name">Имя</label>
+                        <input id="user_name" type="text" name="name" >
+                    </div>
+                    <div class="input_cont">
+                        <label for="user_lastname">Фамилия</label>
+                        <input id="user_lastname" type="text" name="lastname" >
+                    </div>
+                    <div class="input_cont">
+                        <label for="user_city">Город</label>
+                        <input id="user_city" type="text" name="city" >
+                    </div>
+                    <div class="input_cont">
+                        <label for="user_activity">Вид деятельности</label>
+                        <input id="user_activity" type="text" name="activity" >
+                    </div>
+                    <div class="input_cont">
+                        <label for="user_activity">E-Mail</label>
+                        <input id="user_activity" type="email" name="activity" >
+                    </div>
+                    <div class="input_cont">
+                        <label for="user_phone">Контактный телефон</label>
+                        <input id="user_phone" type="tel" name="phone" >
+                    </div>
+                    <div class="input_cont">
+                        <button class="form-submit" type="submit">Зарегистрироваться</button>
+                    </div>
+                    
+               </form>
+            </div>
+
+            <!-- Tab Content 2 -->
+            <div id="tab-2-content" class="tab-content-item">
+                <form id="business-registration">
+                    <div class="input_cont">
+                        <label for="name_company">Наименование организации</label>
+                        <input id="name_company" type="text" name="name_company" >
+                    </div>
+                    <div class="input_cont">
+                        <label for="company_activity">Вид деятельности</label>
+                        <input id="company_activity" type="text" name="company_activity" >
+                    </div>
+                    <div class="input_cont">
+                        <label for="company_city">Город</label>
+                        <input id="company_city" type="text" name="company_city" >
+                    </div>
+                    <div class="input_cont">
+                        <label for="representative">Имя</label>
+                        <input id="representative" type="text" name="representative" >
+                    </div>
+                    <div class="input_cont">
+                        <label for="position">Должность</label>
+                        <input id="position" type="email" name="position" >
+                    </div>
+                    <div class="input_cont">
+                        <label for="representative_phone">Контактный телефон</label>
+                        <input id="representative_phone" type="tel" name="representative_phone" >
+                    </div>
+                    <div class="input_cont">
+                        <button class="form-submit" type="submit">Зарегистрироваться</button>
+                    </div>
+               </form>
+            </div>
+
+        </div>
+        <!--tabs content-->
+
+    </div>
 </div>
+
+<!--Register Form END-->
+
+<div class="modal-overlay closed" id="modal-overlay"></div>
 
     <ul class="social">
         <li><a href="#"><img src="images/facebook.svg" alt="facebook"></a></li>

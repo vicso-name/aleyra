@@ -66,7 +66,7 @@
                   <a href="#"><i class="far fa-heart"></i></a>
               </div>
               <div class="header-bottom__content-right_login">
-                  <a class="belogin" href="#">Войти<img src="images/login_icon.svg" alt="enter"></a>
+                <span id="register-button" class="belogin" >Войти<img src="images/login_icon.svg" alt="enter"></span>
               </div>
           </div>
 
@@ -113,6 +113,7 @@
 </header>
 
 <!-- header for mobile end-->
+
 <!-- breadcrumbs -->
 
 <section class="breadcrumbs">
@@ -138,7 +139,7 @@
         <div class="grid__container">
     
             <div class="item sidebar" >
-              <div class="item-content" style="background-image: url(/images/ceramics/ceramists_four.jpg)">
+              <div class="item-content" style="background-image: url(images/ceramics/ceramists_four.jpg)">
                 <a class="look-collection" href="#">
                   <span class="look-collection__text">Смотреть коллекцию</span>
                 </a>
@@ -149,7 +150,7 @@
             </div>
             
             <div class="item content_one" >
-              <div class="item-content" style="background-image: url(/images/ceramics/ceramists_three.jpg)">
+              <div class="item-content" style="background-image: url(images/ceramics/ceramists_three.jpg)">
                 <a class="look-collection" href="#">
                   <span class="look-collection__text">Смотреть коллекцию</span>
                 </a>
@@ -160,7 +161,7 @@
             </div>
             
             <div class="item content_two">
-              <div class="item-content" style="background-image: url(/images/ceramics/ceramists_one.jpg)">
+              <div class="item-content" style="background-image: url(images/ceramics/ceramists_one.jpg)">
                  <a class="look-collection" href="#">
                   <span class="look-collection__text">Смотреть коллекцию</span>
                 </a>
@@ -171,7 +172,7 @@
             </div>
             
             <div class="item content-three">
-              <div class="item-content" style="background-image: url(/images/ceramics/ceramists_two.jpg)">
+              <div class="item-content" style="background-image: url(images/ceramics/ceramists_two.jpg)">
                 <a class="look-collection" href="#">
                   <span class="look-collection__text">Смотреть коллекцию</span>
                 </a>
@@ -271,7 +272,7 @@
         <div class="grid__container project-page">
     
             <div class="item sidebar" >
-              <div class="item-content" style="background-image: url(/images/ceramics/ceramists_four.jpg)">
+              <div class="item-content" style="background-image: url(images/ceramics/ceramists_four.jpg)">
                 <a class="look-collection" href="#">
                   <span class="look-collection__text">Смотреть коллекцию</span>
                 </a>
@@ -282,7 +283,7 @@
             </div>
             
             <div class="item content_one" >
-              <div class="item-content" style="background-image: url(/images/ceramics/ceramists_three.jpg)">
+              <div class="item-content" style="background-image: url(images/ceramics/ceramists_three.jpg)">
                 <a class="look-collection" href="#">
                   <span class="look-collection__text">Смотреть коллекцию</span>
                 </a>
@@ -293,7 +294,7 @@
             </div>
             
             <div class="item content_two">
-              <div class="item-content" style="background-image: url(/images/ceramics/ceramists_one.jpg)">
+              <div class="item-content" style="background-image: url(images/ceramics/ceramists_one.jpg)">
                  <a class="look-collection" href="#">
                   <span class="look-collection__text">Смотреть коллекцию</span>
                 </a>
@@ -304,7 +305,7 @@
             </div>
             
             <div class="item content-three">
-              <div class="item-content" style="background-image: url(/images/ceramics/ceramists_two.jpg)">
+              <div class="item-content" style="background-image: url(images/ceramics/ceramists_two.jpg)">
                 <a class="look-collection" href="#">
                   <span class="look-collection__text">Смотреть коллекцию</span>
                 </a>
@@ -426,6 +427,104 @@
   </div>
   
 </div>
+
+<!--Register Form-->
+
+<div id="form-register" class="form-register closed">
+    <div id="close-registerform" class="close-registerform">
+        <img src="images/close-icone.svg" alt="close-registerform">
+    </div>
+    <div class="form-register__content">
+        
+        <div class="form-header">
+            <h3>Регистрация аккаунта</h3>
+        </div>
+        <!--tabs-->
+        <div class="tabs">
+            <div id="tab-1" class="tab-item tab-border"> <div class="tab-item__circle"></div> Физическое лицо</div>
+            <div id="tab-2" class="tab-item"> <div class="tab-item__circle"></div> Юридическое лицо</div>
+        </div>
+        <!--tabs end-->
+
+        <!--tabs content-->
+        <div class="tab-content">
+
+            <!-- Tab Content 1 -->
+            <div id="tab-1-content" class="tab-content-item show">
+               <form id="client-registration">
+                    <div class="input_cont">
+                        <label for="user_name">Имя</label>
+                        <input id="user_name" type="text" name="name" >
+                    </div>
+                    <div class="input_cont">
+                        <label for="user_lastname">Фамилия</label>
+                        <input id="user_lastname" type="text" name="lastname" >
+                    </div>
+                    <div class="input_cont">
+                        <label for="user_city">Город</label>
+                        <input id="user_city" type="text" name="city" >
+                    </div>
+                    <div class="input_cont">
+                        <label for="user_activity">Вид деятельности</label>
+                        <input id="user_activity" type="text" name="activity" >
+                    </div>
+                    <div class="input_cont">
+                        <label for="user_activity">E-Mail</label>
+                        <input id="user_activity" type="email" name="activity" >
+                    </div>
+                    <div class="input_cont">
+                        <label for="user_phone">Контактный телефон</label>
+                        <input id="user_phone" type="tel" name="phone" >
+                    </div>
+                    <div class="input_cont">
+                        <button class="form-submit" type="submit">Зарегистрироваться</button>
+                    </div>
+                    
+               </form>
+            </div>
+
+            <!-- Tab Content 2 -->
+            <div id="tab-2-content" class="tab-content-item">
+                <form id="business-registration">
+                    <div class="input_cont">
+                        <label for="name_company">Наименование организации</label>
+                        <input id="name_company" type="text" name="name_company" >
+                    </div>
+                    <div class="input_cont">
+                        <label for="company_activity">Вид деятельности</label>
+                        <input id="company_activity" type="text" name="company_activity" >
+                    </div>
+                    <div class="input_cont">
+                        <label for="company_city">Город</label>
+                        <input id="company_city" type="text" name="company_city" >
+                    </div>
+                    <div class="input_cont">
+                        <label for="representative">Имя</label>
+                        <input id="representative" type="text" name="representative" >
+                    </div>
+                    <div class="input_cont">
+                        <label for="position">Должность</label>
+                        <input id="position" type="email" name="position" >
+                    </div>
+                    <div class="input_cont">
+                        <label for="representative_phone">Контактный телефон</label>
+                        <input id="representative_phone" type="tel" name="representative_phone" >
+                    </div>
+                    <div class="input_cont">
+                        <button class="form-submit" type="submit">Зарегистрироваться</button>
+                    </div>
+               </form>
+            </div>
+
+        </div>
+        <!--tabs content-->
+
+    </div>
+</div>
+
+<!--Register Form END-->
+
+<div class="modal-overlay closed" id="modal-overlay"></div>
 
 <ul class="social">
     <li><a href="#"><img src="images/facebook.svg" alt="facebook"></a></li>

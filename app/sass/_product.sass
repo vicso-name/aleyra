@@ -2,7 +2,7 @@
     display: flex
     margin-top: 44px
     &__slider
-        flex-basis: 35%
+        flex-basis: 38%
     &__details
         flex-basis: 65%
         border: 1px solid #454545
@@ -31,15 +31,36 @@
         &-description
             display: flex
             gap: 66px
+            &_wrapper
+                flex-basis: 432px
             &_list
                 margin: 0
                 padding: 0
                 list-style-type: none
-                flex-basis: 432px
+                margin-bottom: 33px
                 li
                     display: flex
                     justify-content: space-between
                     margin-bottom: 12px
+                    @include font-jost
+                    font-size: 14px
+                    font-style: normal
+                    font-weight: 300
+                    line-height: 16px
+                    letter-spacing: 0em
+            .main-btn
+                display: flex
+                align-items: center
+                width: 166px
+                img
+                    width: 10px
+                    height: 16px
+                    margin-right: 10px
+                    filter: invert(1)
+                &:hover
+                    img
+                        filter: invert(0)
+                
             &_text
               flex-basis: 50%  
               p
@@ -50,6 +71,19 @@
                 line-height: 23px
                 letter-spacing: 0em
                 text-align: left
+
+.product-mobile__description
+    display: none
+    margin-top: 15px
+    p
+        @include font-jost
+        font-size: 16px
+        font-style: normal
+        font-weight: 300
+        line-height: 23px
+        letter-spacing: 0em
+        text-align: left
+        margin-bottom: 0
 
 .related-product
     margin-top: 50px
@@ -67,10 +101,30 @@
             letter-spacing: 0em
             text-align: left  
     &__content
-        display: flex
-        gap: 20px 
+        display: grid
+        grid-template-columns: repeat(5, 1fr)
+        grid-gap: 20px
         &-wrapper
-            flex: 1 16%  
+            position: relative
+            .add-to-favorite
+                position: absolute
+                z-index: 99
+                width: 34px
+                height: 34px
+                background-color: #1C1C1C
+                line-height: 34px
+                text-align: center
+                border-radius: 50%
+                cursor: pointer
+                right: 18px
+                top: 18px
+                &:hover
+                   .fa-heart
+                       font-weight: bold
+                &.active
+                    .fa-heart
+                       font-weight: bold
+
             &_item
                 &-img
                     overflow: hidden
@@ -93,10 +147,69 @@
                     font-weight: 400
                     line-height: 22px
                     letter-spacing: 0em
-                    text-align: left
-     
-                        
+                    text-align: left               
 .check-all__models
     text-align: center
     margin-top: 46px
 
+.product-image-carousels
+    display: flex
+    justify-content: center
+
+.thumbnails-slider
+    width: 105px
+    height: 158px
+    padding: 0
+    margin-right: 15px
+    .thumbnail-button
+        display: block 
+        background: transparent
+        border: none
+        height: 188px!important
+        img
+            width: 105px
+            height: 100%
+.main-image-slider
+    position: relative
+    width: 401px
+    height: 100%
+    .slick-slide img
+        width: 100%
+    .slick-prev,
+    .slick-next
+        font-size: 0
+        position: absolute
+        border: 0
+        background: none
+        z-index: 1
+        background-color: rgba(0,0,0, .6)
+        border-radius: 50%
+        width: 28px
+        height: 28px
+    .slick-prev
+        top: 50%
+        left: 15px
+        transform: translate(0, -50%)
+    .slick-prev:after
+        content: ""
+        position: absolute
+        background-image: url(../images/left.svg)
+        background-repeat: no-repeat
+        width: 28px
+        height: 28px
+        top: 9px
+        right: -11px
+    .slick-next
+        top: 50%
+        right: 15px
+        transform: translate(0, -50%)
+    .slick-next:after
+        content: ""
+        position: absolute
+        background-image: url(../images/right.svg)
+        background-repeat: no-repeat
+        width: 28px
+        height: 28px
+        top: 9px
+        right: -11px
+   

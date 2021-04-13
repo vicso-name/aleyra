@@ -10,6 +10,10 @@
 
 @media (max-width: 1024px)  
 
+    .close-registerform
+        right: 16px
+        top: 10px
+
     .welcome
         height: 430px
     .welcome-text__title
@@ -151,19 +155,67 @@
     .single-project__description
         padding-top: 15px
         padding-bottom: 40px
-   
+
+
+    //product
+    .product-content__details
+        padding: 30px
+        flex-basis: 50%
+    .product-content__slider
+        flex-basis: 50%
+    .main-image-slider
+        width: 345px
+    .product-content__details-description_text
+        display: none
+    .related-product__title h2
+        font-size: 30px
+        line-height: 34px
+    .related-product__content-wrapper_title a
+        font-size: 12px
+        line-height: 17px
+    .related-product__content-wrapper .add-to-favorite
+        width: 24px
+        height: 24px
+        line-height: 21px
+        right: 7px
+        top: 7px
+    .related-product__content-wrapper .add-to-favorite .fa-heart
+        font-size: 12px
+
+    .product-mobile__description
+        display: block
+    .product-content__details-title h1
+        font-size: 30px
+        line-height: 38px
+    .main-btn.price-request
+        font-size: 10px
+    .main-btn.addtocollection
+        font-size: 10px
     //footer
     .footer-menu li
         margin-right: 34px
     .footer-menu li a
         font-size: 12px 
 
-    
 
+/* For 992 Resolution */
+
+@media (max-width: 992px)
+    .product-content__details
+        padding: 15px
+    .main-btn.addtocollection
+        font-size: 8px
+    .main-btn.price-request
+        font-size: 8px
+    .main-image-slider
+        width: 300px
 
 /* For 768 Resolution */
 
 @media (max-width: 768px) 
+    .breadcrumbs .kama_breadcrumbs .kb_sep
+        margin-right: 4px
+        margin-left: 4px
     .welcome
         height: 294px
         
@@ -318,7 +370,21 @@
         margin-top: 8
     .single-project__model
         padding-bottom: 10px
-
+    .main-btn.price-request
+        margin-bottom: 15px
+    .related-product__content
+        grid-template-columns: repeat(2,1fr)
+        .related-product__content-wrapper
+            &:last-child
+                display: none
+    .product-content
+        flex-direction: column
+    .product-content__details-description_list
+        flex-basis: 100%
+    .main-image-slider
+        width: 425px
+    .product-content__details
+        margin-top: 20px
 /* For 640 Resolution */  
 
 @media (max-width: 640px) 
@@ -390,8 +456,12 @@
     .collection-inner__title
        .main-btn
            display: none
-    
-
+    .form-register__content
+        padding: 15px 20px 15px 20px
+    .main-image-slider
+        width: 100%
+    .thumbnails-slider
+        display: none
 /* For 480 Resolution */
 
 @media (max-width: 485px)
@@ -431,7 +501,6 @@
         font-size: 12px
     .footer-meta__contact .mail
         font-size: 12px
-
     .collection-content__item:hover .look
         display: none
     .header-top__right-search .searchform input.active
@@ -479,6 +548,9 @@
         width: 53%
         height: 32vw
         top: 203vw
+    .form-register .tabs .tab-item
+        font-size: 16px
+     
 /* For 360 Resolution */  
   
 @media (max-width: 370px)
@@ -492,5 +564,7 @@
         margin-left: 0
     .footer-meta__mobile-description ul
         font-size: 10px
+    .form-register .tabs .tab-item
+        font-size: 12px
 
   
