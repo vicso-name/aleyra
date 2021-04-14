@@ -125,9 +125,9 @@ input:-webkit-autofill:active
         content: ""
         background: #ffffff
         position: absolute
-        transition: all .3s ease
+        transition: all .6s ease
         transform: scaleX(0)
-        transition: transform .3s
+        transition: transform .6s
         transform-origin: bottom left
         left: 0
         right: 0
@@ -169,8 +169,8 @@ input:-webkit-autofill:active
 .header-top
     display: grid
     grid-template-columns: 600px auto 1fr
-    padding-top: 4px
-    padding-bottom: 4px
+    padding-top: 15px
+    padding-bottom: 15px
     &__left
         flex-basis: 300px
         &-phone
@@ -473,7 +473,7 @@ input:-webkit-autofill:active
             &-img
                 img
                     transform: scale(1.2)
-                    transition: all .3s ease
+                    transition: all .8s ease
                     width: 100%
             &-meta
                 display: flex
@@ -511,20 +511,15 @@ input:-webkit-autofill:active
                     font-style: normal
                     font-weight: 400
                     line-height: 23px
-                    left: 32px
                     letter-spacing: 0em
+                    left: -250px
+                    transition: left .8s ease
                     text-align: left
                     position: absolute
                     bottom: 36px                
             &:hover
                 .look
-                    animation: 400ms linear pulse
-                @keyframes pulse
-                    0%
-                        left: -250px 
-                    50%
-                        left:  32px
-
+                    left: 32px
                 .collection-content__item-img
                     img
                         transform: scale(1)
