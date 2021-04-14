@@ -215,6 +215,13 @@ input:-webkit-autofill:active
             padding-right: 22px
             padding-top: 3px
             position: relative
+            @include font-jost
+            color: #fff
+            font-size: 16px
+            font-style: normal
+            font-weight: 400
+            line-height: 26px
+            letter-spacing: 0
             &::before
                 content: ""
                 position: absolute
@@ -345,14 +352,16 @@ input:-webkit-autofill:active
                         height: 1px
                         background-color: #dc7d26
                         top: 45px
-                        opacity: 0
+                        transition: transform .3s ease
+                        transform: scaleX(0)
+                        transform-origin: bottom left
                     &:hover
                         text-decoration: none
                         &::before
-                            opacity: 1
+                            transform: scaleX(1)
                     &.active
                         &::before
-                            opacity: 1
+                            transform: scaleX(1)
 
                         
     
@@ -509,7 +518,7 @@ input:-webkit-autofill:active
                     bottom: 36px                
             &:hover
                 .look
-                    animation: .3s linear pulse
+                    animation: 400ms linear pulse
                 @keyframes pulse
                     0%
                         left: -250px 
@@ -704,6 +713,7 @@ input:-webkit-autofill:active
 @import "profile"
 @import "product"
 @import "registration"
+@import "about"
 
 // === footer end ===  
     

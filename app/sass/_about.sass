@@ -1,0 +1,120 @@
+.about-page
+    margin-top: 44px
+    &__content
+        background-attachment: fixed
+        background-repeat: no-repeat
+        background-size: cover
+    &__content-guts
+        padding-top: 151px
+        padding-bottom: 151px
+        padding-left: 53px
+        max-width: 600px
+        margin-bottom: 20px
+        h1
+            @include font-jost
+            color: #ffffff
+            text-transform: uppercase
+            margin-bottom: 18px
+            font-size: 50px
+            font-style: normal
+            font-weight: 100
+            line-height: 58px
+            letter-spacing: 0em
+            text-align: left
+        .subtitle
+            @include font-jost
+            max-width: 357px
+            color: #ffffff
+            font-size: 16px
+            margin-bottom: 30px
+            font-style: normal
+            font-weight: 500
+            line-height: 23px
+            letter-spacing: 0em
+            text-align: left
+        p
+            @include font-jost
+            font-size: 16px
+            font-style: normal
+            font-weight: 300
+            line-height: 23px
+            letter-spacing: 0em
+            text-align: left
+            margin-bottom: 40px
+
+.ourgoal
+    display: flex
+    &-item__left
+        background-color: #191919
+        padding: 40px 50px 50px 50px
+        flex-basis: 50%
+        &-guts
+            max-width: 485px
+        h2
+            @include font-jost
+            text-transform: uppercase
+            font-size: 50px
+            font-style: normal
+            font-weight: 100
+            line-height: 72px
+            letter-spacing: 0em
+            text-align: left
+        .ourgoal-subtitle
+            @include font-jost
+            font-size: 26px
+            margin-bottom: 15px
+            font-style: normal
+            font-weight: 300
+            line-height: 37px
+            letter-spacing: 0em
+            text-align: left
+        p
+            @include font-jost
+            font-size: 16px
+            margin-bottom: 46px
+            font-style: normal
+            font-weight: 300
+            line-height: 23px
+            letter-spacing: 0em
+            text-align: left
+    &-item__right
+        flex-basis: 50%
+        border: 1px solid #454545
+        padding: 40px 50px 50px 50px
+        &-guts
+        h2
+            @include font-jost
+            text-transform: uppercase
+            font-size: 50px
+            font-style: normal
+            font-weight: 100
+            line-height: 72px
+            letter-spacing: 0em
+            text-align: left
+        .ourtasks
+            padding: 0
+            margin: 0
+            list-style-type: none
+            padding-left: 26px
+            li
+                padding-bottom: 15px
+                padding-left: 22.76px
+                position: relative
+                @include font-jost
+                font-size: 16px
+                font-style: normal
+                font-weight: 300
+                line-height: 23px
+                letter-spacing: 0em
+                text-align: left
+                &::before
+                    content: ""
+                    position: absolute
+                    left: -25px
+                    top: 5px
+                    width: 18px
+                    height: 13px
+                    background-image: url(../images/marker.svg)
+
+.ourgoal > * + *
+    margin: 0 0 0 20px

@@ -79,9 +79,9 @@
         top: 15px
     .collection-content__item-title .link
         font-size: 12px
+        line-height: 16px
     .collection-content__item-title
         width: 165px
-
     
 
 
@@ -191,6 +191,19 @@
         font-size: 10px
     .main-btn.addtocollection
         font-size: 10px
+
+    //about
+    .about-page__content-guts
+        padding-top: 35px
+        padding-bottom: 60px
+    .ourgoal-item__left h2
+        font-size: 30px
+    .ourgoal-item__right h2
+        font-size: 30px
+    .ourgoal-item__left .ourgoal-subtitle
+        font-size: 20px
+        line-height: 20px
+
     //footer
     .footer-menu li
         margin-right: 34px
@@ -209,10 +222,18 @@
         font-size: 8px
     .main-image-slider
         width: 300px
+    
+    //about
+    .ourgoal
+        flex-direction: column
+    .ourgoal > * + *
+        margin: 20px 0 0 0 
 
 /* For 768 Resolution */
 
-@media (max-width: 768px) 
+@media (max-width: 768px)
+    .to-collection-title h2
+        font-size: 20px 
     .breadcrumbs .kama_breadcrumbs .kb_sep
         margin-right: 4px
         margin-left: 4px
@@ -258,7 +279,7 @@
         top: 0
         right: -500px
         height: 100vh
-        z-index: 999999
+        z-index: 9999
         &.active
             right: 0
             display: block
@@ -385,6 +406,17 @@
         width: 425px
     .product-content__details
         margin-top: 20px
+
+    //about
+    .about-page__content-guts
+        padding-left: 15px
+        padding-right: 15px
+    .ourgoal-item__right
+        padding: 40px 20px 50px 20px
+    .ourgoal-item__left
+        padding: 40px 20px 50px 20px
+
+
 /* For 640 Resolution */  
 
 @media (max-width: 640px) 
@@ -439,7 +471,10 @@
         padding-top: 40px
     .collection-content
         grid-template-columns: repeat(2, 1fr)
-        grid-gap: 14px
+    .collection-content     
+        margin: 0 0 0 20px
+        &:first-child
+            margin: 0
     .about-content
         flex-basis: 100%
     .main-btn.in-footer
@@ -462,6 +497,13 @@
         width: 100%
     .thumbnails-slider
         display: none
+
+    //about
+    .about-page__content
+        background-position: top
+    .about-page__content-guts h1
+        font-size: 40px
+
 /* For 480 Resolution */
 
 @media (max-width: 485px)

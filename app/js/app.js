@@ -120,6 +120,7 @@ $(document).ready(function() {
 	let modalOverlay = document.querySelector("#modal-overlay");
 	let closeButton = document.querySelector("#close-registerform");
 	let openButton = document.querySelector("#register-button");
+	let openButtonMobile = document.querySelector("#register-mobile");
 
 	closeButton.addEventListener("click", function() {
 		modal.classList.toggle("closed");
@@ -127,6 +128,11 @@ $(document).ready(function() {
 	});
 
 	openButton.addEventListener("click", function() {
+		modal.classList.toggle("closed");
+		modalOverlay.classList.toggle("closed");
+	});
+
+	openButtonMobile.addEventListener("click", function() {
 		modal.classList.toggle("closed");
 		modalOverlay.classList.toggle("closed");
 	});
