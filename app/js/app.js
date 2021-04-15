@@ -171,5 +171,15 @@ $(document).ready(function() {
 		item.addEventListener('click', closeSurfaceList);
 	});
 
+	//mobile filter
+	
+	let openMobileFilter = document.querySelector('#open-mobile-filter');
+	let mobChevron = document.querySelector('#mobchevron');
+
+	openMobileFilter.addEventListener("click", function(){
+		mobChevron.classList.toggle("open");
+	})
+
+
 
 })

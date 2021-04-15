@@ -35,6 +35,30 @@
     .product-content__slider
         flex-basis: 44%
 
+    .collection-inner__title .title
+        font-size: 30px
+    
+@media (max-width: 1155px)
+    .filter-guts
+        grid-gap: 20px
+        grid-template-columns: 1fr 1fr 1fr
+        position: relative
+        &::before
+            content: ""
+            position: absolute
+            width: 98%
+            left: 50%
+            top: 46px
+            transform: translate(-50%, 0)
+            height: 1px
+            background: #2D2D2D
+    .collection-inner__filter
+        height: 115px
+    .color-filter::before
+        display: none
+    .filter-guts-sizes::before
+        display: none
+
 
 /* For 1024 Resolution */
 
@@ -149,6 +173,7 @@
     .collection-inner__title .title
         font-size: 25px
         line-height: 38px
+        flex-basis: 50%
     .collection-inner__content-item_title .link
         font-size: 12px
     .collection-inner__content-item_title
@@ -259,7 +284,21 @@
     .ourgoal > * + *
         margin: 20px 0 0 0 
 
-    
+    .filter-guts
+        grid-gap: 20px
+        grid-template-columns: 1fr 1fr
+        position: relative
+        &::before
+            content: ""
+            position: absolute
+            width: 98%
+            left: 50%
+            top: 37px
+            transform: translate(-50%, 0)
+            height: 1px
+            background: #2D2D2D
+    .filter-guts-buttons
+        justify-content: flex-start
     
 
 /* For 768 Resolution */
@@ -450,7 +489,17 @@
 
     .slider-flex-container-children-two
         width: 150px
-        
+    .collection-content
+        grid-template-columns: repeat(2, 1fr)
+    .collection-inner__content    
+        grid-template-columns: repeat(4,1fr)
+    .collection-inner__filter
+        display: none
+    .collection-mobile-filter
+        display: block
+
+
+
 /* For 640 Resolution */  
 
 @media (max-width: 640px) 
@@ -503,8 +552,6 @@
         margin-bottom: 15px
     .footer .section-inner
         padding-top: 40px
-    .collection-content
-        grid-template-columns: repeat(2, 1fr)
     .about-content
         flex-basis: 100%
     .main-btn.in-footer
@@ -550,6 +597,10 @@
     .slider-single
         .slick-slide img
             width: 100%
+    .collection-inner__title .title
+        flex-basis: 100%
+        font-size: 20px
+        line-height: 25px
 
 /* For 480 Resolution */
 
