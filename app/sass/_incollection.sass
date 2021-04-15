@@ -20,11 +20,11 @@
         .main-btn
             margin-bottom: 20px
     &__content
-        display: inline-flex
-        flex-wrap: wrap
-        gap: 18px
+        display: grid
+        grid-template-columns: repeat(5, 1fr)
+        grid-gap: 12px
         &-wrapper
-            flex: 1 16%
+           position: relative
         &-item
             position: relative
             overflow: hidden

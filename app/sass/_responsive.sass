@@ -5,6 +5,36 @@
    .profile-main__content-block_right-description
        max-width: 550px
 
+@media (max-width: 1600px)
+    .product-content__details
+        flex-basis: 64%
+    .product-content__slider
+        flex-basis: 35%
+
+@media (max-width: 1550px)
+    .product-content__details
+        flex-basis: 60%
+    .product-content__slider
+        flex-basis: 37%
+
+@media (max-width: 1425px)
+    .slider-flex-container-children-one
+        width: 390px
+    .product-content__details
+        flex-basis: 57%
+    .product-content__slider
+        flex-basis: 42%
+
+@media (max-width: 1225px)
+    .slider-flex-container-children-two
+        width: 90px
+    .slider-flex-container-children-one
+        width: 370px
+    .product-content__details
+        flex-basis: 55%
+    .product-content__slider
+        flex-basis: 44%
+
 
 /* For 1024 Resolution */
 
@@ -121,10 +151,10 @@
         line-height: 38px
     .collection-inner__content-item_title .link
         font-size: 12px
-        line-height: 17px
     .collection-inner__content-item_title
         margin-top: 10px
         margin-bottom: 0
+        line-height: 17px
 
     //project page
     .single-project__image
@@ -229,6 +259,9 @@
     .ourgoal > * + *
         margin: 20px 0 0 0 
 
+    
+    
+
 /* For 768 Resolution */
 
 @media (max-width: 768px)
@@ -239,7 +272,6 @@
         margin-left: 4px
     .welcome
         height: 294px
-        
     .about
         padding-bottom: 0
         &::before
@@ -399,7 +431,7 @@
             &:last-child
                 display: none
     .product-content
-        flex-direction: column
+        grid-template-columns: 1fr
     .product-content__details-description_list
         flex-basis: 100%
     .main-image-slider
@@ -416,7 +448,8 @@
     .ourgoal-item__left
         padding: 40px 20px 50px 20px
 
-
+    .slider-flex-container-children-two
+        width: 150px
 /* For 640 Resolution */  
 
 @media (max-width: 640px) 
@@ -471,10 +504,6 @@
         padding-top: 40px
     .collection-content
         grid-template-columns: repeat(2, 1fr)
-    .collection-content     
-        margin: 0 0 0 20px
-        &:first-child
-            margin: 0
     .about-content
         flex-basis: 100%
     .main-btn.in-footer
@@ -492,7 +521,7 @@
        .main-btn
            display: none
     .form-register__content
-        padding: 15px 20px 15px 20px
+        padding: 50px 20px 15px 20px
     .main-image-slider
         width: 100%
     .thumbnails-slider
@@ -503,6 +532,23 @@
         background-position: top
     .about-page__content-guts h1
         font-size: 40px
+
+    //inner collection
+    .collection-inner__content
+        grid-template-columns: repeat(3, 1fr)
+    .collection-content__item-overlay .look
+        display: none
+        opacity: 0
+
+    .slider-flex-container-children-two
+        display: none
+    .slider-flex-container-children-one
+        width: 100%
+        margin: 0
+        height: 350px
+    .slider-single
+        .slick-slide img
+            width: 100%
 
 /* For 480 Resolution */
 
@@ -592,6 +638,9 @@
         top: 203vw
     .form-register .tabs .tab-item
         font-size: 16px
+    //inner collection
+    .collection-inner__content
+        grid-template-columns: repeat(2, 1fr)
      
 /* For 360 Resolution */  
   

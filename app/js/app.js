@@ -12,56 +12,65 @@ $(document).ready(function() {
 		}
 	});
 
-	//Product Slider
-	/*********************
-    Thumbnails slider
-  *********************/
-  // Change the main image whenever a thumbnail button is activated
-  $('.thumbnails-slider').on('init', function(e, slider) {
-    $(slider.$slides.find('.thumbnail-button')).each(function(index) {
-      $(this).on('click', function() {
-        // Move aria-current="true" to this button
-        $(slider.$slides.find('.thumbnail-button').removeAttr('aria-current'));
-        $(this).attr('aria-current', true);
 
-        // Change the main image to match this thumbnail button
-        var index = $(this).closest('.slick-slide').data('slick-index');
-        $('.main-image-slider').slick('slickGoTo', index);
-      });
-    });
-  });
+	$('.slider-single').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: true,
+		fade: false,
+		adaptiveHeight: true,
+		infinite: false,
+	   useTransform: true,
+		speed: 400,
+		cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
+	});
+   
+	$('.slider-nav')
+		.on('init', function(event, slick) {
+			$('.slider-nav .slick-slide.slick-current').addClass('is-active');
+		})
+		.slick({
+			slidesToShow: 3,
+			slidesToScroll: 3,
+			dots: false,
+			vertical: true,
+			focusOnSelect: false,
+			infinite: false,
+			responsive: [{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 3,
+				}
+			}, {
+				breakpoint: 640,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 3,
+			   }
+			}, {
+				breakpoint: 420,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 3,
+		   }
+			}]
+		});
+   
+	$('.slider-single').on('afterChange', function(event, slick, currentSlide) {
+		$('.slider-nav').slick('slickGoTo', currentSlide);
+		var currrentNavSlideElem = '.slider-nav .slick-slide[data-slick-index="' + currentSlide + '"]';
+		$('.slider-nav .slick-slide.is-active').removeClass('is-active');
+		$(currrentNavSlideElem).addClass('is-active');
+	});
+   
+	$('.slider-nav').on('click', '.slick-slide', function(event) {
+		event.preventDefault();
+		var goToSingleSlide = $(this).data('slick-index');
+   
+		$('.slider-single').slick('slickGoTo', goToSingleSlide);
+	});
   
-  // Initialize the slider
-  $('.thumbnails-slider').slick({
-    vertical: true,
-    slidesToShow: 4,
-    infinite: false,
-    instructionsText: 'This carousel contains a column of small thumbnails. Selecting a thumbnail will change the main image in the carousel that follows. Use the Previous and Next buttons to cycle through all the thumbnails, use Enter to select.',
-    regionLabel: 'thumbnails carousel'
-  });
-  
-  
-  /********************
-    Main image slider
-  *********************/
-  $('.main-image-slider').slick({
-    slidesToShow: 1,
-    draggable: false,
-    instructionsText: 'This carousel shows one large product image at a time. Use the Previous and Next buttons to move between images, or use the preceding thumbnails carousel to select a specific image to display here.',
-    regionLabel: 'main image carousel',
-  });
-  
-    // Update the thumbnail slider when the user changes the main slider directly.
-    $('.main-image-slider').on('beforeChange', function(e, slider, currentSlide, nextSlide) {
-      // Remove aria-current from the last selected thumbnail image button
-      $('.thumbnails-slider .thumbnail-button[aria-current="true"]').removeAttr('aria-current');
-      
-      // Select the thumbnail image button that goes with this main image. Most importantly, this updates Slick's internal state to be consistent with the visual change.
-      $('.thumbnails-slider').slick('slickGoTo', nextSlide);
-
-      // Add aria-current="true" to the correct thumbnail image button to convey to screen readers that it's active.
-      $('.thumbnails-slider .thumbnail-button:eq(' + nextSlide + ')').attr('aria-current', true);
-    }); 
 
 	//Mobile Menu Trigger
 

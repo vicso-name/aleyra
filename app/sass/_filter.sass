@@ -1,0 +1,129 @@
+.collection-inner__filter
+    background-color: #1C1C1C
+    height: 65px
+    display: flex
+    align-items: center
+    margin-bottom: 20px
+.filter-guts
+    display: grid
+    padding-right: 15px
+    padding-left: 40px
+    grid-template-columns: 283px 487px 299px 1fr
+.filter
+    width: 100%
+    label
+        cursor: pointer
+        position: relative  
+        margin-right: 42px   
+        @include font-jost 
+        font-size: 14px
+        font-style: normal
+        font-weight: 400
+        line-height: 20px
+        letter-spacing: 0em
+        margin-bottom: 0
+        &:hover
+            .checkmark
+                border: 5px solid #DC7D26
+        .checkmark
+            position: absolute
+            top: 2px
+            left: -27px
+            height: 18px
+            width: 18px
+            border: 1px solid #6E6B6B
+            transition: all .1s ease
+            border-radius: 50%
+        input
+            position: absolute
+            opacity: 0
+            cursor: pointer
+            height: 0
+            width: 0
+    label input:checked ~ .checkmark
+        border: 5px solid #DC7D26
+                
+.apply-filter
+    padding: 0
+    border: none
+    background-color: #BE5B00
+    width: 150.28px
+    height: 35px
+    @include font-jost
+    text-transform: uppercase
+    color: #ffffff
+    font-size: 12px
+    font-style: normal
+    font-weight: 500
+    line-height: 17px
+    letter-spacing: 0.1em
+
+.clear-filter
+    position: relative
+    display: inline-block
+    border: 1px solid #ffffff
+    color: #ffffff
+    width: 150.28px
+    height: 35px
+    line-height: 35px
+    text-align: center
+    @include font-jost
+    font-size: 14px
+    font-style: normal
+    font-weight: 400
+    margin-right: 15.03px
+    &::before
+        content: ""
+        background: #ffffff
+        position: absolute
+        transition: all .6s ease
+        transform: scaleX(0)
+        transition: transform .6s
+        transform-origin: bottom left
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+        z-index: -1
+    &:hover
+        color: #111111
+        text-decoration: none
+        img
+            filter: invert(1)
+        &::before
+            transform: scaleX(1)
+
+
+.filter-guts-sizes
+    display: flex
+    align-items: center
+    position: relative
+    padding-top: 8px
+.filter-guts-type
+    display: flex
+    align-items: center
+    position: relative
+    padding-top: 8px
+.color-filter
+    display: flex
+    align-items: center
+    position: relative
+    padding-top: 8px
+.filter-guts-buttons
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    position: relative
+
+.filter-title
+    position: absolute
+    @include font-jost
+    color: #6F6B6B
+    font-size: 14px
+    font-style: normal
+    font-weight: 400
+    line-height: 20px
+    letter-spacing: 0em
+    margin: 0
+    top: -9px
+    left: -27px

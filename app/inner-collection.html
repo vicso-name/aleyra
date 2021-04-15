@@ -145,12 +145,108 @@
         </div>
 
         <div class="collection-inner__filter">
-             
+             <form id="filter" class="filter" action="" method="POST">
+                <div class="filter-guts">
+
+                    <!-- filter color -->
+                        <div class="color-filter">
+                            <h4 class="filter-title">Цвет</h4>
+                            <label class="allcolor-label">
+                                <input class="allcolor" type="radio" name="colorfilter" id="allcolor" checked="checked">
+                                <span class="checkmark"></span>
+                                Все
+                            </label>
+
+                            <label class="blackcolor-label">
+                                <input class="blackcolor" type="radio" name="colorfilter" id="blackcolor">
+                                <span class="checkmark"></span>
+                                Темные
+                            </label>
+
+                            <label class="whitecolor-label">
+                                <input class="whitecolor" type="radio" name="colorfilter" id="whitecolor">
+                                <span class="checkmark"></span>
+                                Светлые
+                            </label>
+
+                        </div>
+                    <!-- filter color end-->
+
+                    <!-- filter surface type -->
+                    <div class="filter-guts-type">
+
+                        <h4 class="filter-title">Тип поверхности:</h4>
+
+                        <label class="alltype-label">
+                            <input class="alltype" type="radio" name="surface" id="alltype" checked="checked">
+                            <span class="checkmark"></span>
+                             Все
+                        </label>
+
+                        <label class="fullaptype-label">
+                            <input class="fullaptype" type="radio" name="surface" id="fullaptype">
+                            <span class="checkmark"></span>
+                            FULLLAP
+                        </label>
+
+                        <label class="matttype-label">
+                            <input class="matttype" type="radio" name="surface" id="matttype">
+                            <span class="checkmark"></span>
+                             MATT
+                        </label> 
+
+                        <label class="sugartype-label">
+                            <input class="sugartype" type="radio" name="surface" id="sugartype">
+                            <span class="checkmark"></span>
+                            SUGAR EFFECT
+                        </label> 
+
+                        <label class="semitype-label">
+                            <input class="semitype" type="radio" name="surface" id="semitype">
+                            <span class="checkmark"></span>
+                            SEMI LAP
+                        </label>    
+                    </div>
+                    <!-- filter surface type end-->
+
+                    <!-- filter size -->
+                    <div class="filter-guts-sizes">
+                        
+                        <h4 class="filter-title">Размер:</h4>
+
+                        <label class="allsizetype-label">
+                            <input class="allsizetype" type="radio" name="sizefilter" id="allsizetype" checked="checked">
+                            <span class="checkmark"></span>
+                            Все
+                        </label>
+                        <label class="ninetytype-label">
+                            <input class="ninetytype" type="radio" name="sizefilter" id="ninetytype">
+                            <span class="checkmark"></span>
+                            90х120см
+                        </label>
+                        <label class="fiftytype-label">
+                            <input class="fiftytype" type="radio" name="sizefilter" id="fiftytype">
+                            <span class="checkmark"></span>
+                            50х50см
+                        </label>
+
+                    </div>
+                    <!-- filter size end-->
+
+                    <div class="filter-guts-buttons">
+                        <a class="clear-filter" href="#"><img src="images/clear_filter.svg" alt="clear"> очистить фильтр</a>
+                        <button class="apply-filter" type="submit">Применить</button>
+                    </div>
+                </div>
+             </form>
         </div>
 
         <div class="collection-inner__content">
 
             <div class="collection-inner__content-wrapper">
+                <div class="add-to-favorite active">
+                    <span><i class="far fa-heart"></i></span>
+                </div>
                 <a class="collection-inner__content-item" href="#">
                     <div class="collection-inner__content-item_img">
                         <img src="images/inner-collection/inner_one.jpg" alt="collection-img">
@@ -162,6 +258,9 @@
             </div>
 
             <div class="collection-inner__content-wrapper">
+                <div class="add-to-favorite">
+                    <span><i class="far fa-heart"></i></span>
+                </div>
                 <a class="collection-inner__content-item" href="#">
                     <div class="collection-inner__content-item_img">
                         <img src="images/inner-collection/inner_two.jpg" alt="collection-img">
@@ -173,6 +272,9 @@
             </div>
 
             <div class="collection-inner__content-wrapper">
+                <div class="add-to-favorite">
+                    <span><i class="far fa-heart"></i></span>
+                </div>
                 <a class="collection-inner__content-item" href="#">
                     <div class="collection-inner__content-item_img">
                         <img src="images/inner-collection/inner_three.jpg" alt="collection-img">
@@ -184,6 +286,9 @@
             </div>
 
             <div class="collection-inner__content-wrapper">
+                <div class="add-to-favorite">
+                    <span><i class="far fa-heart"></i></span>
+                </div>
                 <a class="collection-inner__content-item" href="#">
                     <div class="collection-inner__content-item_img">
                         <img src="images/inner-collection/inner_four.jpg" alt="collection-img">
@@ -195,6 +300,9 @@
             </div>
 
             <div class="collection-inner__content-wrapper">
+                <div class="add-to-favorite">
+                    <span><i class="far fa-heart"></i></span>
+                </div>
                 <a class="collection-inner__content-item" href="#">
                     <div class="collection-inner__content-item_img">
                         <img src="images/inner-collection/inner_five.jpg" alt="collection-img">
@@ -208,6 +316,9 @@
             <!-- second line --->
 
             <div class="collection-inner__content-wrapper">
+                <div class="add-to-favorite">
+                    <span><i class="far fa-heart"></i></span>
+                </div>
                 <a class="collection-inner__content-item" href="#">
                     <div class="collection-inner__content-item_img">
                         <img src="images/inner-collection/inner_six.jpg" alt="collection-img">
@@ -219,6 +330,9 @@
             </div>
 
             <div class="collection-inner__content-wrapper">
+                <div class="add-to-favorite">
+                    <span><i class="far fa-heart"></i></span>
+                </div>
                 <a class="collection-inner__content-item" href="#">
                     <div class="collection-inner__content-item_img">
                         <img src="images/inner-collection/inner_seven.jpg" alt="collection-img">
@@ -230,6 +344,9 @@
             </div>
 
             <div class="collection-inner__content-wrapper">
+                <div class="add-to-favorite">
+                    <span><i class="far fa-heart"></i></span>
+                </div>
                 <a class="collection-inner__content-item" href="#">
                     <div class="collection-inner__content-item_img">
                         <img src="images/inner-collection/inner_eight.jpg" alt="collection-img">
@@ -241,6 +358,9 @@
             </div>
 
             <div class="collection-inner__content-wrapper">
+                <div class="add-to-favorite">
+                    <span><i class="far fa-heart"></i></span>
+                </div>
                 <a class="collection-inner__content-item" href="#">
                     <div class="collection-inner__content-item_img">
                         <img src="images/inner-collection/inner_nine.jpg" alt="collection-img">
@@ -252,6 +372,9 @@
             </div>
 
             <div class="collection-inner__content-wrapper">
+                <div class="add-to-favorite">
+                    <span><i class="far fa-heart"></i></span>
+                </div>
                 <a class="collection-inner__content-item" href="#">
                     <div class="collection-inner__content-item_img">
                         <img src="images/inner-collection/inner_ten.jpg" alt="collection-img">
@@ -382,46 +505,53 @@
 
 <!--  Upload Section END -->
 
-   <!--  Footer -->
+     <!--  Footer -->
 
-   <footer class="footer" style="background-image: url(images/footer_bg.png);">
-    <section class="section-inner">
+     <footer class="footer" style="background-image: url(images/footer_bg.png);">
+        <section class="section-inner">
 
-            <ul class="footer-menu">
-                <li><a href="#">Коллекции</a></li>
-                <li><a href="#">Проекты</a></li>
-                <li><a href="#">О компании</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
+                <ul class="footer-menu">
+                    <li><a href="#">Коллекции</a></li>
+                    <li><a href="#">Проекты</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
 
-            <div class="footer-meta">
-                <div class="footer-meta__contact">
-                    <img class="logo" src="/images/main_logo.svg" alt="footer_logo">
-                    <a class="phone" href="tel:+79163819783"><img src="images/phone.svg" alt="phone">+7 916 381-97-83</a>
-                    <a class="mail" href="mailto:ucompany@gmail.com"><img src="images/e_mail.svg" alt="e-mail">ucompany@gmail.com</a>
+                <div class="footer-meta">
+                    <div class="footer-meta__contact">
+                        <img class="logo" src="images/main_logo.svg" alt="footer_logo">
+                        <a class="phone" href="tel:+79163819783"><img src="images/phone.svg" alt="phone">+7 916 381-97-83</a>
+                        <a class="mail" href="mailto:ucompany@gmail.com"><img src="images/e_mail.svg" alt="e-mail">ucompany@gmail.com</a>
+                    </div>
+                    <div class="footer-meta__mobile-description">
+                        <ul>
+                            <li>ООО «АЛЕЙРА-КЕРАМИКА»</li>
+                            <li>115114, г. Москва, проезд 2-й Павелецкий, дом 5,</li>
+                            <li>строение 1, эт/помещ. 5/28</li>
+                        </ul>
+                    </div>
+                    <a class="main-btn in-footer" href="#">Стать партнером</a>
                 </div>
-                <a class="main-btn in-footer" href="#">Стать партнером</a>
+
+                
+        </section>
+        <div class="horizont-line"></div>
+        <div class="footer-copiright">
+            <div class="footer-copiright__adress">
+                <ul>
+                    <li>ООО «АЛЕЙРА-КЕРАМИКА»</li>
+                    <li>115114, г. Москва, проезд 2-й Павелецкий, дом 5,</li>
+                    <li>строение 1, эт/помещ. 5/28</li>
+                </ul>
             </div>
-
-            
-    </section>
-    <div class="horizont-line"></div>
-    <div class="footer-copiright">
-        <div class="footer-copiright__adress">
-            <ul>
-                <li>ООО «АЛЕЙРА-КЕРАМИКА»</li>
-                <li>115114, г. Москва, проезд 2-й Павелецкий, дом 5,</li>
-                <li>строение 1, эт/помещ. 5/28</li>
-            </ul>
+            <div class="footer-copiright__content">Все права защищены 2021</div>
+            <div class="footer-copiright__privacy">
+                <a class="privacy" href="#">Политика конфидициальности</a>
+                <a class="convention" href="#">Пользовательское соглашение</a>
+            </div>
         </div>
-        <div class="footer-copiright__content">Все права защищены 2021</div>
-        <div class="footer-copiright__privacy">
-            <a class="privacy" href="#">Политика конфидициальности</a>
-            <a class="convention" href="#">Пользовательское соглашение</a>
-        </div>
-    </div>
 
-</footer>
+    </footer>
 <!--  Footer END -->
 
 <div class="mobile-menu__content">
