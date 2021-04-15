@@ -84,3 +84,83 @@
 
 
 // === collection inner END === 
+
+.fake-selecto-wrapper    
+    position: relative
+
+.fake-selecto
+    width: 193px
+    height: 36px
+    border: 1px solid #3B3B3B
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-left: 14px
+    padding-right: 16px
+    cursor: pointer
+
+.fake-selecto__title
+    @include font-jost
+    font-size: 14px
+    font-style: normal
+    font-weight: 400
+    line-height: 20px
+    letter-spacing: 0em
+    
+.fake-selecto__content
+    position: absolute
+    top: 40px
+    padding-left: 40px
+    padding-top: 17px
+    z-index: 999
+    min-height: 211px
+    width: 100%
+    background: #2B2B2B
+    transform: scale(0)
+    transform-origin: center
+    label
+        display: block
+        margin-bottom: 16px!important
+    &.open
+        transform: scale(1)
+
+.surface-shevron
+    position: relative
+    width: 8px
+    height: 8px
+    &::before
+        content: "\f078"
+        position: absolute
+        top: -2px
+        font-family: 'Font Awesome 5 Free'
+        font-size: 10px
+        font-weight: 600
+    &.openlist
+        &::before
+            content: "\f077"
+            position: absolute
+            top: -2px
+            font-family: 'Font Awesome 5 Free'
+            font-size: 10px
+            font-weight: 600
+
+.color-filter
+    position: relative
+    &::before
+        content: ""
+        position: absolute
+        right: 20px
+        top: -3px
+        height: 43px
+        width: 1px
+        background-color: #3C3C3C
+.filter-guts-sizes
+    position: relative
+    &::before
+        content: ""
+        position: absolute
+        right: 19px
+        top: -3px
+        height: 43px
+        width: 1px
+        background-color: #3C3C3C

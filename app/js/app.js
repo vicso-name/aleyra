@@ -145,4 +145,31 @@ $(document).ready(function() {
 		modal.classList.toggle("closed");
 		modalOverlay.classList.toggle("closed");
 	});
+
+	//close/open surface type selection
+
+	let surface_type = document.querySelector("#surface_type");
+	let surface_content = document.querySelector("#surface_content");
+	let surface_shevron = document.querySelector("#surface-shevron");
+	const surfaceItem = document.querySelectorAll('.surface-item');
+
+	surface_type.addEventListener("click", function() {
+		surface_content.classList.toggle("open");
+		surface_shevron.classList.toggle("openlist");
+	});
+
+	function closeSurfaceList(){
+		surface_content.classList.remove("open");
+	}
+
+	$('.surface-item').on('click', function(){
+		let surfaceItemText = $(this).text().toLowerCase();
+		$('.fake-selecto__title').html(surfaceItemText);
+	})
+
+	surfaceItem.forEach(item=>{
+		item.addEventListener('click', closeSurfaceList);
+	});
+
+
 })
