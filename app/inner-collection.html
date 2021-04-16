@@ -150,6 +150,105 @@
                 <div class="collection-mobile-filter__header-title">Фильтр</div>
                 <div id="mobchevron" class="collection-mobile-filter__header-chevron"></div>
             </div>
+            <div id="mobile-filter-content" class="mobile-filter-content">
+                <form id="filter" class="filter" action="" method="POST">
+                    <div class="filter-guts">
+    
+                        <!-- filter color -->
+                            <div class="color-filter">
+                                <h4 class="filter-title">Цвет</h4>
+                                <label class="allcolor-label">
+                                    <input class="allcolor" type="radio" name="colorfilter" id="allcolor" checked="checked">
+                                    <span class="checkmark"></span>
+                                    Все
+                                </label>
+    
+                                <label class="blackcolor-label">
+                                    <input class="blackcolor" type="radio" name="colorfilter" id="blackcolor">
+                                    <span class="checkmark"></span>
+                                    Темные
+                                </label>
+    
+                                <label class="whitecolor-label">
+                                    <input class="whitecolor" type="radio" name="colorfilter" id="whitecolor">
+                                    <span class="checkmark"></span>
+                                    Светлые
+                                </label>
+    
+                            </div>
+                        <!-- filter color end-->
+    
+                        <!-- filter size -->
+                        <div class="filter-guts-sizes">
+                            
+                            <h4 class="filter-title">Размер:</h4>
+    
+                            <label class="allsizetype-label">
+                                <input class="allsizetype" type="radio" name="sizefilter" id="allsizetype" checked="checked">
+                                <span class="checkmark"></span>
+                                Все
+                            </label>
+                            <label class="ninetytype-label">
+                                <input class="ninetytype" type="radio" name="sizefilter" id="ninetytype">
+                                <span class="checkmark"></span>
+                                90х120см
+                            </label>
+                            <label class="fiftytype-label">
+                                <input class="fiftytype" type="radio" name="sizefilter" id="fiftytype">
+                                <span class="checkmark"></span>
+                                50х50см
+                            </label>
+    
+                        </div>
+                        <!-- filter size end-->
+    
+                         <!-- filter surface type -->
+                        <div class="filter-guts-type">
+
+                            <h4 class="filter-title">Тип поверхности:</h4>
+    
+                            <label class="surface-item">
+                                <input class="alltype" type="radio" name="surface" id="alltype" checked="checked">
+                                <span class="checkmark"></span>
+                                <span></span>  Все
+                            </label>
+                            <label class="surface-item">
+                                <input class="sugartype" type="radio" name="surface" id="sugartype">
+                                <span class="checkmark"></span>
+                                SUGAR EFFECT
+                            </label> 
+                            
+                            <label class="surface-item">
+                                <input class="matttype" type="radio" name="surface" id="matttype">
+                                <span class="checkmark"></span>
+                                    MATT
+                            </label> 
+
+                            <label class="surface-item">
+                                <input class="fullaptype" type="radio" name="surface" id="fullaptype">
+                                <span class="checkmark"></span>
+                                FULLLAP
+                            </label>
+    
+                            
+    
+                            
+    
+                            <label class="surface-item">
+                                <input class="semitype" type="radio" name="surface" id="semitype">
+                                <span class="checkmark"></span>
+                                SEMI LAP
+                            </label>        
+                        </div>
+                        <!-- filter surface type end-->
+    
+                        <div class="filter-guts-buttons">
+                            <a class="clear-filter" href="#"><img src="images/clear_filter.svg" alt="clear"> очистить фильтр</a>
+                            <button class="apply-filter" type="submit">Применить</button>
+                        </div>
+                    </div>
+                 </form>
+            </div>
         </div>
         <!-- Mobile Filter END-->
 
@@ -253,12 +352,6 @@
 
                     </div>
                     <!-- filter surface type end-->
-
-                    <!-- filter surface type -->
-
-
-
-                    <!-- filter surface type -->
 
                     <div class="filter-guts-buttons">
                         <a class="clear-filter" href="#"><img src="images/clear_filter.svg" alt="clear"> очистить фильтр</a>

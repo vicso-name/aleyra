@@ -497,6 +497,54 @@
         display: none
     .collection-mobile-filter
         display: block
+    .mobile-filter-content
+        background-color: #1c1c1c
+        position: absolute
+        z-index: 999
+        width: 100%
+        display: none
+        &.open
+            display: block
+    .filter-guts
+        padding-left: 15px
+        padding-right: 15px
+        padding-top: 15px
+        padding-bottom: 26px
+        grid-gap: 28px
+        grid-template-columns: 1fr    
+    .filter-guts::before
+        top: 52px
+        width: 95%
+    .filter-title
+        top: -13px
+    .clear-filter
+        font-size: 12px
+        width: 127px
+    .apply-filter
+        font-size: 12px
+        width: 127px
+    .filter-guts-type
+        display: inline-block
+        padding-left: 29px
+        padding-top: 8px
+        .surface-item
+            margin-right: 35px
+            margin-bottom: 12px
+    .surface-item
+        margin-bottom: 12px
+    .filter label
+        font-size: 12px 
+        margin-right: 39px 
+    .filter-guts::after
+        content: ""
+        position: absolute
+        width: 95%
+        left: 50%
+        top: 109px
+        transform: translate(-50%, 0)
+        height: 1px
+        background: #2D2D2D
+
 
 
 
@@ -601,6 +649,8 @@
         flex-basis: 100%
         font-size: 20px
         line-height: 25px
+    .filter-guts-buttons
+        justify-content: space-between
 
 /* For 480 Resolution */
 

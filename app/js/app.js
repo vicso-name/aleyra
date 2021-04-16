@@ -175,10 +175,15 @@ $(document).ready(function() {
 	
 	let openMobileFilter = document.querySelector('#open-mobile-filter');
 	let mobChevron = document.querySelector('#mobchevron');
+	let mobileFilterContent = document.querySelector('#mobile-filter-content');
+
 
 	openMobileFilter.addEventListener("click", function(){
 		mobChevron.classList.toggle("open");
-	})
+		mobileFilterContent.classList.toggle("open");
+	});
+
+	
 
 
 
